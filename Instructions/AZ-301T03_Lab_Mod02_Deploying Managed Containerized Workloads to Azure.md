@@ -1,4 +1,4 @@
-﻿# Module 4: Creating Managed Server Applications in Azure
+﻿# Creating Managed Server Applications in Azure
 
 # Lab Answer Key: Deploying Managed Containerized Workloads to Azure
 
