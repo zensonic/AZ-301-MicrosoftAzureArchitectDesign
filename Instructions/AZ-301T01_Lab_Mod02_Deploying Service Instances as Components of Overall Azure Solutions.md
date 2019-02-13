@@ -1,4 +1,4 @@
-# Module 10: Integrating SaaS Services Available on the Azure Platform
+# Integrating SaaS Services Available on the Azure Platform
 
 # Lab Answer Key: Deploying Service Instances as Components of Overall Azure Solutions
 
