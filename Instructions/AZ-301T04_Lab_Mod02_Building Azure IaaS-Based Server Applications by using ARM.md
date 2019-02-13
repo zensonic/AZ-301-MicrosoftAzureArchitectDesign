@@ -1,4 +1,4 @@
-﻿# Module 3: Building Azure IaaS-Based Server Applications.
+﻿# Building Azure IaaS-Based Server Applications.
 # Lab Answer Key: Building Azure IaaS-Based Server Applications by using Azure Resource Manager Templates and Azure Building Blocks.
 
 ## Before we start
