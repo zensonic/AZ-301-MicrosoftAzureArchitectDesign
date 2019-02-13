@@ -1,4 +1,4 @@
-﻿# Module 2: Deploying Resources with Azure Resource Manager
+﻿# Deploying Resources with Azure Resource Manager
 # Lab Answer Key: Getting Started with Azure Resource Manager Templates and Azure Building Blocks
 
 ## Before we start
