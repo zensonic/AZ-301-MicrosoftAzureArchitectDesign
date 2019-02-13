@@ -1,4 +1,4 @@
-# Module 8: Networking Azure Application Components 
+# Networking Azure Application Components 
 
 # Lab Answer Key: Deploying Network Infrastructure for Use in Azure Solutions
 
