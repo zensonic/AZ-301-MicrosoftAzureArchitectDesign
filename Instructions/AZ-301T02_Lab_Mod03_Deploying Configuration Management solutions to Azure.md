@@ -1,4 +1,4 @@
-# Module 12: Monitoring and automating Azure solutions
+# Monitoring and automating Azure solutions
 
 # Lab Answer Key: Deploying Configuration Management solutions to Azure
 
