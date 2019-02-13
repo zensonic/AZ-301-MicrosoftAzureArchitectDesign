@@ -1,4 +1,4 @@
-# Module 7: Comparing Database Options in Azure
+# Comparing Database Options in Azure
 
 # Lab Answer Key: Deploying Database Instances in Azure
 
@@ -86,7 +86,7 @@
  
     - In the **Partition key** text box, type **/id**.
  
-    - In the **Throughput (400 – 1,000,000 RU/s** textbox, type **400**.
+    - In the **Throughput (400 â€“ 1,000,000 RU/s** textbox, type **400**.
  
     - Click the **OK** button.
 
