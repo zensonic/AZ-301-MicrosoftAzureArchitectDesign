@@ -1,4 +1,4 @@
-# Module 11: Integrating Azure Solution Components using Messaging Services
+# Integrating Azure Solution Components using Messaging Services
 
 # Lab Answer Key: Deploying Messaging components to facilitate communication between Azure resources
 
