@@ -1,4 +1,4 @@
-# Module 5: Authoring Serverless Applications in Azure
+# Authoring Serverless Applications in Azure
 
 # Lab Answer Key: Deploying Serverless Workloads to Azure
 
