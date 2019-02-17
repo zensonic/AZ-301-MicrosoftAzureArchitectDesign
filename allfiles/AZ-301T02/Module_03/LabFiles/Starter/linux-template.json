@@ -17,9 +17,9 @@
         "virtualNetworkName": "[concat('vnt', uniqueString(resourceGroup().id))]",
         "subnetName": "Linux",
         "imageReference": {
-            "publisher": "suse",
-            "offer": "opensuse-leap",
-            "sku": "42.3",
+            "publisher": "OpenLogic",
+            "offer": "CentOS",
+            "sku": "7.5",
             "version": "latest"
         }
     },
