@@ -84,7 +84,7 @@
  
     - In the **Collection id** text box, type **MemberCollection**.
  
-    - In the **Partition key** text box, type **/id**.
+    - In the **Partition key** text box, type **/lastname**.
  
     - In the **Throughput (400 – 1,000,000 RU/s)** textbox, type **400**.
  
@@ -120,7 +120,6 @@
 
     ```
     {
-        "id": "1",
         "firstName": "Pennington",
         "lastName": "Oneal",
         "age": 26,
@@ -138,7 +137,6 @@
 
     ```
     {
-        "id": "2",
         "firstName": "Suzanne",
         "lastName": "Oneal",
         "company": "Veraq"
