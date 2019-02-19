@@ -48,13 +48,13 @@
 
 1. On the new **Azure Cosmos DB** blade, perform the following tasks:
 
-    - In the **ID** text box, type a globally unique value.
-
-    - In the **API** drop-down list, select the **SQL** option.
-
     - Leave the **Subscription** drop-down list entry set to its default value.
 
     - Resource group: ensure that the **Create new** option is selected and then, in the text box, type **AADesignLab0701-RG**.
+
+    - In the **Account Name** text box, type a globally unique value.
+
+    - In the **API** drop-down list, select the **Core (SQL)** option.
 
     - In the **Location** drop-down list, select the Azure region in which you want to deploy resources in this lab.
 
@@ -86,7 +86,7 @@
  
     - In the **Partition key** text box, type **/id**.
  
-    - In the **Throughput (400 – 1,000,000 RU/s** textbox, type **400**.
+    - In the **Throughput (400 – 1,000,000 RU/s)** textbox, type **400**.
  
     - Click the **OK** button.
 
@@ -120,6 +120,7 @@
 
     ```
     {
+        "id": "1",
         "firstName": "Pennington",
         "lastName": "Oneal",
         "age": 26,
@@ -137,6 +138,7 @@
 
     ```
     {
+        "id": "2",
         "firstName": "Suzanne",
         "lastName": "Oneal",
         "company": "Veraq"
