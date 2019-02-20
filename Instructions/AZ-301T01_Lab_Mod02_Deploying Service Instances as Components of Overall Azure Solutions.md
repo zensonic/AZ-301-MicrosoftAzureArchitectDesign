@@ -135,11 +135,13 @@
 
     - In the **Hosting Plan** drop-down list, ensure that the **Consumption Plan** entry is selected.
 
+    - In the **Runtime Stack** drop-down list, ensure that **.NET** entry is selected. 
+
     - In the **Location** drop-down list, select the Azure region to which you deployed an instance of Cognitive Service in the previous task.
 
     - In the **Storage** section, ensure that the **Create new** option is selected and accept the default value of the Storage Account name. 
 
-    - In the **Application Insights** section, click **Off**.
+    - In the **Application Insights** section, set the extension to **Disabled**.
 
     - Click the **Create** button.
 
@@ -171,25 +173,23 @@
 
 1. Back on the function app blade, click the **Platform features** tab at the top of the blade.
 
-1. In the **Platform features** tab, click the **Deployment options** link in the **Code Deployment** section.
+1. In the **Platform features** tab, click the **Deployment Center** link in the **Code Deployment** section.
 
-1. On the **Deployments** blade that appears, click the **Setup** button at the top of the blade.
+1. On the **Deployment Center** blade that appears, click the **External** button and then click **Continue**.
 
-1. On the **Deployment option** blade, click **Choose Source**.
+1. Click **App Service Kudu build server** and click **Continue**. 
 
-1. On the **Choose source** blade, click **External Repository**.
-
-1. On the **Deployment option** blade, perform the following tasks:
+1. Once the **Code** section is displayed, perform the following tasks
 
     - In the **Repository URL** text box, type **https://github.com/azure-labs/cognitive-services-function**.
 
-    - In the **Branch** drop-down list, ensure that **master** entry is selected.
+    - In the **Branch** text box, type **master**.
 
     - In the **Repository Type** section, ensure that the **Git** option is selected.
 
-    - Click the **OK** button.
+    - Click the **Continue** button.
 
-1. Wait for the deployment to complete before you proceed to the next task. 
+1. Click **Finish** and wait for the deployment to complete before you proceed to the next task. 
 
     > **Note**: You will be able to determine that the first deployment has completed by monitoring the **Deployments** tab. This tab updates automatically.
 
