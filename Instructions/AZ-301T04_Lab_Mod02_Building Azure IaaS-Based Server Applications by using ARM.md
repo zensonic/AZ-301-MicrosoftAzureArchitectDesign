@@ -68,7 +68,7 @@
 
     - In the **Password** and **Confirm password** text boxes, enter the value **Pa55w.rd1234**.
 
-    - In the **Public inbound ports** section, select the **None** option. 
+    - In the **Public inbound ports** section, select the **Allow selected port** option and, in the **Select inbound ports** drop-down list, select **HTTP**.
 
     - Leave the **Already have a Windows license?** option set to **No**.
     
@@ -95,6 +95,12 @@
         - In the **Subnet address range** text box, enter the value **10.3.0.0/24**.
 
     - Leave the **Public IP** entry set to its default value.
+    
+    - Leave the **NIC network security group** option set to **Basic**.
+    
+    - Leave the **Public inbound ports** option set to **Allow selected ports**
+    
+    - Leave the **Select inbound ports** entry set to **HTTP**
 
     - Leave the **Accelerated networking** entry set to its default value.
 
@@ -312,38 +318,6 @@
 
 
 #### Task 7: Validate that the Azure VM is serving web content
-
-1. In the hub menu in the Azure portal, click **Resource groups**.
-
-1. On the **Resource groups** blade, click the resource group into which you deployed the virtual machine.
-
-1. On the resource group blade, click the entry representing the **Network Security Group** resource.
-
-1. On the network security group blade, click **Inbound security rules**. 
-
-1. In the **Inbound security rules** pane, click the **Add** button at the top of the blade.
-
-1. In the **Add inbound security rule** pane, perform the following tasks:
-
-    - In the **Source** list, leave the value set to **Any**.
-
-    - In the **Source port ranges** field, leave the value set to **\***.
-
-    - In the **Destination** list, leave the value set to **Any**.
-
-    - In the **Destination port ranges** field, enter the value **80**.
-
-    - In the **Protocol** section, select the **TCP** option.
-
-    - In the **Action** section, leave the value set to **Allow**.
-
-    - In the **Priority** field, enter the value **1100**.
-
-    - In the **Name** field, enter the value **AllowHTTPInBound**.
-
-    - In the **Description** field, enter the value **Allow HTTP Inbound**.
-
-    - Click the **OK** button.
 
 1. In the hub menu in the Azure portal, click **Resource groups**.
 
