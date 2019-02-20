@@ -46,41 +46,45 @@
 
 1. On the **Windows Server 2016 Datacenter** blade, click the **Create** button.
 
-1. On the **Basics** blade, perform the following tasks:
+1. On the **Basics** tab, perform the following tasks:
 
+    - Leave the **Subscription** drop-down list entry set to its default value.
+    
+    - In the **Resource group** section, click **Create new**, in the text box, type **AADesignLab0301-RG**, and click **OK**.
+      
     - In the **Name** text box, enter the value **lab03vm0**.
 
-    - In the **VM disk type** list, select the **SSD** option.
+    - In the **Region** drop-down list, select an Azure region to which you want to deploy resources in this lab, set **Fault domains** to the maximum value, leave **Update domains** with its default value, and click **OK**,
+    
+    - Leave the entry in the **Availability options** drop-down list, select **Availability set**.
+
+    - In the **Availability set** section, click **Create new**, box, enter the value **lab03avset0**
+
+    - Leave the entry in the **Image** drop-down list set to its default value.
+
+    - Ensure that the size is set to **Standard DS1 v2**
 
     - In the **Username** text box, enter the value **Student**.
 
     - In the **Password** and **Confirm password** text boxes, enter the value **Pa55w.rd1234**.
 
-    - Leave the **Subscription** drop-down list entry set to its default value.
+    - In the **Public inbound ports** section, select the **None** option. 
 
-    - In the **Resource group** section, select the **Create new** option and, in the text box, type **AADesignLab0301-RG**.
+    - Leave the **Already have a Windows license?** option set to **No**.
+    
+    - Click **Next: Disks >**
+    
+1. On the **Disks** tab, perform the following tasks:
 
-    - In the **Location** drop-down list, select an Azure region to which you want to deploy resources in this lab.
+    - Ensure that the **OS disk type** dropdown list entry is set to **Premium SSD**
 
-    - Leave the **Already have a Windows license?** option set to its default value
+    - Click **Next: Networking >**
+    
+1. On the **Networking** tab, perform the following tasks: 
 
-    - Click the **OK** button.
-
-1. On the **Choose a size** blade, click the entry representing the size **DS1_v2** and click the **Select** button.
-
-1. On the **Settings** blade, perform the following tasks:
-
-    - Leave the **Availability zones** drop down list set to its default value.
-
-    - Click **Availability set**, on the **Change availability set** blade, click **Create new**, on the **Crete new** blade, specify the following settings and click **OK**:
-
-        - In the **Name** text box, enter the value **lab03avset0**.
-
-        - Set **Fault domains** to the maximum value
-
-        - Leave **Update domains** with its default value.
-
-    - Click **Virtual network**, on the **Create virtual network** blade, specify the following settings and click **OK**:
+    - In the **Virtual network** section, click **Create new**. 
+    
+    - On the **Create virtual network** blade, specify the following settings and click **OK**:
 
         - In the **Name** text box, enter the value **lab03vnet0**.
 
@@ -90,27 +94,29 @@
 
         - In the **Subnet address range** text box, enter the value **10.3.0.0/24**.
 
-    - Leave the **Public IP address** entry set to its default value.
-
-    - Leave the **Network Security Group** entry set to its default value.
-
-    - In the **Select public inbound ports**, select the checkbox **No public inbound ports**.
+    - Leave the **Public IP** entry set to its default value.
 
     - Leave the **Accelerated networking** entry set to its default value.
 
-    - Leave the **Extensions** entry set to its default value.
+    - Click **Next: Management >**
+    
+1. On the **Management** tab, perform the following tasks: 
 
-    - Leave the **Enable auto-shutdown** entry set to its default value.
+    - Leave the **Boot diagnostics** option set to its default value.
 
-    - Leave the **Boot diagnostics** entry set to its default value.
+    - Leave the **OS guest diagnostics** option set to its default value.
 
-    - Leave the **Guest OS diagnostics** entry set to its default value.
+    - Leave the **Diagnostics storage account** entry set to its default value.
+    
+    - Leave the **System assigned managed identity** option set to its default value.
+    
+    - Leave the **Enable auto-shutdown** option set to its default value.
 
-    - Leave the **Register with Azure Active Directory** entry set to its default value.
+    - Leave the **Enable backup** option set to its default value.
 
-    - Click the **OK** button.
-
-1. On the **Summary** blade, review the settings of your new virtual machine and click the **Create** button.
+    - Click the **Review + create** button.
+    
+1. On the **Create a virtual machine** blade, review the settings of your new virtual machine and click the **Create** button.
 
 1. Do not wait for the deployment to complete and proceed to the next task.
 
