@@ -98,6 +98,8 @@
 
     > **Note**: The **Restriction** column will contain the value **NotAvailableForSubscription** for VM sizes that are not available in your subscription.
 
+    > **Note**: As of 2/21/2019, VM Size **Standard_DS2_V2** was available in **westeurope**
+
 
 1. Wait for the deployment to complete before you proceed to the next task.
 
