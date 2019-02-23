@@ -62,38 +62,70 @@
 
     - Click the **Create** button.
 
-1. Wait for the provisioning to complete before you proceed to the next task.
+1. Wait for the provisioning to complete before you proceed to the next step.
 
     > **Note**: The deployment should take less than 5 minutes.
 
-1. In the hub menu in the Azure portal, click **Resource groups**.
+1. At the top of the portal, click the **Cloud Shell** icon to open a new shell instance.
 
-1. On the **Resource groups** blade, click **AADesignLab0701-RG**.
+    > **Note**: The **Cloud Shell** icon is a symbol that is constructed of the combination of the *greater than* and *underscore* characters.
 
-1. On the **AADesignLab0701-RG** blade, click the entry representing the newly created **Azure Cosmos DB** account.
+1. If this is your first time opening the **Cloud Shell** using your subscription, you will see a wizard to configure **Cloud Shell** for first-time usage. When prompted, in the **Welcome to Azure Cloud Shell** pane, click **Bash (Linux)**.
 
-1. On the Azure Cosmos DB account blade, click **Overview**.
+    > **Note**: If you do not see the configuration options for **Cloud Shell**, this is most likely because you are using an existing subscription with this course's labs. If so, proceed directly to the next task. 
 
-1. At the top of the Azure Cosmos DB account blade, click the **Add Collection** button.
+1. In the **You have no storage mounted** pane, click **Show advanced settings**, perform the following tasks:
 
-1. In the **Add Collection** popup, perform the following tasks:
+    - Leave the **Subscription** drop-down list entry set to its default value.
 
-    - In the **Add Collection** popup, perform the following tasks:
- 
-    - In the **Database id** text box, type **FinancialClubDatabase**.
- 
-    - In the **Collection id** text box, type **MemberCollection**.
- 
-    - In the **Partition key** text box, type **/lastname**.
- 
-    - In the **Throughput (400 – 1,000,000 RU/s)** textbox, type **400**.
- 
-    - Click the **OK** button.
+    - In the **Cloud Shell region** drop-down list, select the Azure region matching or near the location that you selected earlier in this task.
 
-1. On the left side of the Azure Cosmos DB account blade, click the **Keys**.
+    - In the **Resource group** section, select the **Use existing** option and then, in the drop-down list, select **AADesignLab0701-RG**.
 
-1. In the **Keys** pane, record the values in the **URI** and **PRIMARY KEY** fields. You will use these values later in this lab.
+    - In the **Storage account** section, ensure that the **Create new** option is selected and then, in the text box below, type a unique name consisting of a combination of between 3 and 24 characters and digits. 
 
+    - In the **File share** section, ensure that the **Create new** option is selected and then, in the text box below, type **cloudshell**.
+
+    - Click the **Create storage** button.
+
+1. Wait for the **Cloud Shell** to finish its first-time setup procedures before you proceed to the next task.
+
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the name of the resource group that contains the Azure Cosmos DB account you deployed earlier in this task:
+
+    ```
+    RESOURCE_GROUP='AADesignLab0701-RG'
+    ```
+
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the name of the CosmosDB account you created earlier in this task:
+
+    ```
+    COSMOSDB_NAME=$(az cosmosdb list --resource-group $RESOURCE_GROUP --query "[0].name" --output tsv)
+    ```
+
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the primary key of the CosmosDB account you created earlier in this task:
+
+    ```
+    PRIMARY_KEY=$(az cosmosdb list-keys --resource-group $RESOURCE_GROUP --name $COSMOSDB_NAME | jq -r '.primaryMasterKey')
+    ```
+
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the URI of the CosmosDB account you created earlier in this task:
+
+    ```
+    URI="https://$COSMOSDB_NAME.documents.azure.com:443/"
+    ```
+
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a new CosmosDB database named **FinancialClubDatabase:
+
+    ```
+    az cosmosdb database create --url-connection $URI --key $KEY --db-name 'FinancialClubDatabase'
+    ```
+    
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a fixed collection named **MemberCollection** in the newly created database:
+
+    ```
+    az cosmosdb collection create --url-connection $URI --key $KEY --db-name 'FinancialClubDatabase' --collection-name 'MemberCollection' --throughput 400
+    ```
+    
 #### Task 3: Create and query documents in Cosmos DB
 
 1. On the left side of the Azure Cosmos DB account blade, click **Data Explorer**.
