@@ -50,7 +50,7 @@
 
 1. On the **Edit template** blade, click **Load file**.
 
-1. In the **Choose File to Upload** dialog box, navigate to the **F:\\Labfiles\\Mod02\\Starter\\** folder, select the **vnet-simple-template.json** file, and click **Open**. This will load the following content into the template editor pane:
+1. In the **Choose File to Upload** dialog box, navigate to the **\\allfiles\\AZ-301T03\\Module_01\\Labfiles\\Starter\\** folder, select the **vnet-simple-template.json** file, and click **Open**. This will load the following content into the template editor pane:
 
     ```
     {
