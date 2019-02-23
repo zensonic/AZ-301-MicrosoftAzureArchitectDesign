@@ -85,10 +85,19 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a new AKS cluster:
 
     ```
-    az aks create --resource-group $RESOURCE_GROUP --name aad0402-akscluster --node-count 1 --node-vm-size Standard_D1_v2 --generate-ssh-keys
+    az aks create --resource-group $RESOURCE_GROUP --name aad0402-akscluster --node-count 1 --node-vm-size Standard_DS1_v2 --generate-ssh-keys
     ```
 
     > **Note**: If you receive an error message regarding availability of the VM size which value is represented by the `--node-vm-size` parameter, review the message and try other suggested VM sizes.
+
+    > **Note**: Alternatively, you can identify VM sizes available in your subscription in a given region by running the following command and reviewing the values in the **Restriction** column (make sure to replace the `<region>` placeholder with the name of the target region):
+
+    ```
+    Get-AzComputeResourceSku | where {$_.Locations -icontains "region"} | Where-Object {($_.ResourceType -ilike "virtualMachines")}.
+    ```
+
+    > **Note**: The **Restriction** column will contain the value **NotAvailableForSubscription** for VM sizes that are not available in your subscription.
+
 
 1. Wait for the deployment to complete before you proceed to the next task.
 
