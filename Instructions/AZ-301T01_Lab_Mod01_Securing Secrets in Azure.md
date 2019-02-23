@@ -168,7 +168,7 @@
 
 1. On the **Edit template** blade, click **Load file**.
 
-1. In the **Choose File to Upload** dialog box, navigate to the **F:\\Labfiles\\Mod09\\Starter\\** folder, select the **secret-template.json** file, and click **Open**. This will load the following content into the template editor pane:
+1. In the **Choose File to Upload** dialog box, navigate to the **\\allfiles\\AZ-301T01\\Module_01\\LabFiles\\Starter\\** folder, select the **secret-template.json** file, and click **Open**. This will load the following content into the template editor pane:
 
     ```
     {
@@ -224,7 +224,7 @@
 
 1. On the **Edit template** blade, click **Load file**.
 
-1. In the **Choose File to Upload** dialog box, navigate to the **F:\\Labfiles\\Mod09\\Starter\\** folder, select the **storage-template.json** file, and click **Open**. This will load the following content into the template editor pane:
+1. In the **Choose File to Upload** dialog box, navigate to the **\\allfiles\\AZ-301T01\\Module_01\\LabFiles\\Starter\\** folder, select the **storage-template.json** file, and click **Open**. This will load the following content into the template editor pane:
 
     ```
     {
@@ -335,11 +335,11 @@
 
 1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**. 
 
-1. In the **Open** dialog box, navigate to the **F:\\Labfiles\\Mod09\\Starter\\** folder, select the **vm-template.json** file, and click **Open**. 
+1. In the **Open** dialog box, navigate to the **\\allfiles\\AZ-301T01\\Module_01\\LabFiles\\Starter\\** folder, select the **vm-template.json** file, and click **Open**. 
 
 1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**. 
 
-1. In the **Open** dialog box, navigate to the **F:\\Labfiles\\Mod09\\Starter\\** folder, select the **vm-template.parameters.json** file, and click **Open**. 
+1. In the **Open** dialog box, navigate to the **\\allfiles\\AZ-301T01\\Module_01\\LabFiles\\Starter\\** folder, select the **vm-template.parameters.json** file, and click **Open**. 
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to replace the placeholder for the **$KEY_VAULT_ID** parameter in the **vm-template.parameters.json** parameters file with the value of the **$KEY_VAULT_ID** variable:
 
