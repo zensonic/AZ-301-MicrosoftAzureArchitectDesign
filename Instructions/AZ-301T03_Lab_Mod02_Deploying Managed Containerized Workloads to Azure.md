@@ -408,7 +408,7 @@
     vi ~/github.json
     ```
 
-1. At the **Cloud Shell** command prompt, in the vi editor interface, add the content of the sample parameters file (**F:\\Labfiles\\Mod04\\Starter\\parameters.json**):
+1. At the **Cloud Shell** command prompt, in the vi editor interface, add the content of the sample parameters file (**\\allfiles\\AZ-301T03\\Module_02\\Labfiles\\Starter\\parameters.json**):
 
     ```
     {
