@@ -221,7 +221,7 @@
 
 1. On the **Edit template** blade, click the **Load file** link.
 
-1. In the **Open** file dialog that appears, navigate to the **F:\\Mod07\\Labfiles\\Starter** folder.
+1. In the **Open** file dialog that appears, navigate to the **\\allfiles\\AZ-301T02\\Module_02\\LabFiles\\Starter\\** folder.
 
 1. Select the **api.json** file.
 
