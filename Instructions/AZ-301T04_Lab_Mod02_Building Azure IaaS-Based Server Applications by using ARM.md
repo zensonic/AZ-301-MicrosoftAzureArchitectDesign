@@ -131,13 +131,13 @@
 
 1. On the Taskbar, click the **File Explorer** icon.
 
-1. In the **File Explorer** window that appears, navigate to the **F:\\Labfiles\\Mod03\\Starter** folder.
+1. In the **File Explorer** window that appears, navigate to the **\\allfiles\\AZ-301T04\\Module_02\\LabFiles\\Starter\\** folder.
 
 1. Right-click the **IISWebServer.zip** file and select the **Extract All...** option.
 
 1. In the **Extract Compressed (Zipped) Folders** dialog, perform the following tasks:
 
-    - In the **Files will be extracted to this folder:** field, enter the value **F:\\Labfiles\\Mod03\\Starter\\IISWebServer**.
+    - In the **Files will be extracted to this folder:** field, enter the name of the folder into which you want to extract the files.
 
     - Ensure that the **Show extracted files when complete** checkbox is selected.
     
@@ -221,7 +221,7 @@
 
     - In the **Files** field, click the blue folder button to the right of the field.
 
-    - In the **Open file** dialog that appears, navigate to the **F:\\Labfiles\\Mod03\\Starter** folder.
+    - In the **Open file** dialog that appears, navigate to the **\\allfiles\\AZ-301T04\\Module_02\\LabFiles\\Starter\\** folder.
 
     - Select the **IISWebServer.zip** file.
 
@@ -248,7 +248,7 @@
 
 1. On the **Edit template** blade, click **Load file**.
 
-1. In the **Choose File to Upload** dialog box, navigate to the **F:\\Labfiles\\Mod03\\Starter\\** folder, select the **dsc-extension-template.json** file, and click **Open**. This will load the following content into the template editor pane:
+1. In the **Choose File to Upload** dialog box, navigate to the **\\allfiles\\AZ-301T04\\Module_02\\LabFiles\\Starter\\** folder, select the **dsc-extension-template.json** file, and click **Open**. This will load the following content into the template editor pane:
 
     ```
     {
@@ -342,7 +342,7 @@
 
 1. On the Taskbar, click the **File Explorer** icon.
 
-1. In the **File Explorer** window that appears, navigate to the **F:\\Labfiles\\Mod03\\Starter** folder.
+1. In the **File Explorer** window that appears, navigate to the **\\allfiles\\AZ-301T04\\Module_02\\LabFiles\\Starter\\** folder.
 
 1. Right-click the **vmss-template.json** file and select the **Open with Code** option to start the **Visual Studio Code** application.
 
