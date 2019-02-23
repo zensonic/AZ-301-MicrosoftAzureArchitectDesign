@@ -164,7 +164,7 @@
 
 1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**. 
 
-1. In the **Open** dialog box, navigate to the **F:\\Labfiles\\Mod05\\Starter\\** folder, select the **github.json** file, and click **Open**. The file contains the following Azure Resource Manager template:
+1. In the **Open** dialog box, navigate to the **\\allfiles\\AZ-301T03\\Module_03\\Labfiles\\Starter\\** folder, select the **github.json** file, and click **Open**. The file contains the following Azure Resource Manager template:
 
     ```
     {
@@ -211,7 +211,7 @@
 
 1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**. 
 
-1. In the **Open** dialog box, navigate to the **F:\\Labfiles\\Mod05\\Starter\\** folder, select the **parameters.json** file, and click **Open**. The file contains the following parameters for the Azure Resource Manager template you uploaded previously:
+1. In the **Open** dialog box, navigate to the **\\allfiles\\AZ-301T03\\Module_01\\Labfiles\\Starter\\** folder, select the **parameters.json** file, and click **Open**. The file contains the following parameters for the Azure Resource Manager template you uploaded previously:
 
     ```
     {
