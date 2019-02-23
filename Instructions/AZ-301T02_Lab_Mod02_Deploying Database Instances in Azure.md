@@ -117,15 +117,30 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a new CosmosDB database named **FinancialClubDatabase:
 
     ```
-    az cosmosdb database create --url-connection $URI --key $KEY --db-name 'FinancialClubDatabase'
+    az cosmosdb database create --url-connection $URI --key $PRIMARY_KEY --db-name 'FinancialClubDatabase'
     ```
     
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a fixed collection named **MemberCollection** in the newly created database:
 
     ```
-    az cosmosdb collection create --url-connection $URI --key $KEY --db-name 'FinancialClubDatabase' --collection-name 'MemberCollection' --throughput 400
+    az cosmosdb collection create --url-connection $URI --key $PRIMARY_KEY --db-name 'FinancialClubDatabase' --collection-name 'MemberCollection' --throughput 400
+    ```
+
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to display the value of the PRIMARY_KEY variable:
+
+    ```
+    echo $PRIMARY_KEY
     ```
     
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to display the value of the URI variable:
+
+    ```
+    echo $URI
+    ```
+
+    > **Note**: Take a note of these values - you will need them in the next exercise. 
+
+
 #### Task 3: Create and query documents in Cosmos DB
 
 1. On the left side of the Azure Cosmos DB account blade, click **Data Explorer**.
