@@ -68,7 +68,7 @@
 
 1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**. 
 
-1. In the **Open** dialog box, navigate to the **F:\\Labfiles\\Mod12\\Starter\\** folder, select the **linux-template.json** file, and click **Open**. The file contains the following template:
+1. In the **Open** dialog box, navigate to the **\\allfiles\\AZ-301T02\\Module_03\\LabFiles\\Starter\\** folder, select the **linux-template.json** file, and click **Open**. The file contains the following template:
 
     ```
     {
@@ -284,7 +284,7 @@
 
     - Next to the **Configuration file** field, click the blue button with a folder icon.
 
-    - In the **Choose File to Upload** dialog box, navigate to the **F:\\Mod12\\Labfiles\\Starter** folder.
+    - In the **Choose File to Upload** dialog box, navigate to the **\\allfiles\\AZ-301T02\\Module_02\\LabFiles\\Starter\\** folder.
 
     - Select the **lampserver.ps1** file.
 
