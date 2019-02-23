@@ -50,7 +50,7 @@
 
 1. On the **Edit template** blade, click **Load file**.
 
-1. In the **Choose File to Upload** dialog box, navigate to the **F:\\Labfiles\\Mod10\\Starter\\** folder, select the **cognitive-template.json** file, and click **Open**. This will load the following content into the template editor pane:
+1. In the **Choose File to Upload** dialog box, navigate to the **\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\** folder, select the **cognitive-template.json** file, and click **Open**. This will load the following content into the template editor pane:
 
     ```
     {
@@ -275,7 +275,7 @@
     }
     ```
 
-1. Replace the default JSON template with the following template that includes an HTTP trigger (**F:\\Labfiles\\Mod10\\Starter\\logic-app.json**):
+1. Replace the default JSON template with the following template that includes an HTTP trigger (**\\allfiles\\AZ-301T01\\Module_01\\LabFiles\\Starter\\logic-app.json**):
 
     ```
     {
