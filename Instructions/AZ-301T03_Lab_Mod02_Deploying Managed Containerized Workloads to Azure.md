@@ -416,7 +416,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create the parameters file you will use for deployment of the sample solution and open it in the vi interface:
 
     ```
-    vi ~/github.json
+    vi ~/parameters.json
     ```
 
 1. At the **Cloud Shell** command prompt, in the vi editor interface, add the content of the sample parameters file (**\\allfiles\\AZ-301T03\\Module_02\\Labfiles\\Starter\\parameters.json**):
@@ -426,8 +426,8 @@
       "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {
-        "webAppName": {
-          "value": "$"
+        "spClientId": {
+          "value": "$APP_ID"
         },
         "spClientSecret": {		
           "value": "$PASSWORD"
