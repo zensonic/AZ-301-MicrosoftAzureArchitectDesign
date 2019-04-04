@@ -54,11 +54,11 @@
       
     - In the **Name** text box, enter the value **lab03vm0**.
 
-    - In the **Region** drop-down list, select an Azure region to which you want to deploy resources in this lab, set **Fault domains** to the maximum value, leave **Update domains** with its default value, and click **OK**,
+    - In the **Region** drop-down list, select an Azure region to which you want to deploy resources in this lab.
     
-    - Leave the entry in the **Availability options** drop-down list, select **Availability set**.
+    - In the **Availability options** drop-down list, select **Availability set**.
 
-    - In the **Availability set** section, click **Create new**, box, enter the value **lab03avset0**
+    - In the **Availability set** section, click **Create new**, box, enter the value **lab03avset0**, set **Fault domains** to the maximum value, leave **Update domains** with its default value, and click **OK**.
 
     - Leave the entry in the **Image** drop-down list set to its default value.
 
@@ -88,11 +88,11 @@
 
         - In the **Name** text box, enter the value **lab03vnet0**.
 
-        - In the **Address space** text box, enter the value **10.3.0.0/16**.
+        - In the **Address range** text box, enter the value **10.3.0.0/16**.
 
         - In the **Subnet name** text box, enter the value **subnet-0**.
 
-        - In the **Subnet address range** text box, enter the value **10.3.0.0/24**.
+        - In the **Subnet address range** text box, enter the value **10.3.0.0/24**, and click **OK**.
 
     - Leave the **Public IP** entry set to its default value.
     
@@ -207,13 +207,13 @@
 
 1. Click the **Container** button at the top of the blade.
 
-1. In the **New container** pane that appears, specify the following settigns and click **OK**:
+1. In the **New container** pane that appears, specify the following settings and click **OK**:
 
     - In the **Name** text box, enter the value **config**.
 
     - In the **Public access level** list, select the **Blob (anonymous read access for blobs only)** option.
 
-1. Back On the **Blob service** blade, click the entry representing the new **config** container.
+1. Back on the **Blob service** blade, click the entry representing the new **config** container.
 
 1. On the **config** blade, click the **Upload** button at the top of the blade.
 
@@ -323,7 +323,7 @@
 
 1. On the **Resource groups** blade, click the entry representing the resource group into which you deployed the virtual machine.
 
-1. On the resource group blade, click the entry representing the virtual machine you deployed.
+1. On the resource group blade, click the entry representing the **Virtual Machine** you deployed.
 
 1. On the **Virtual machine** blade, locate the **Public IP address** entry, and identify its value.
 
