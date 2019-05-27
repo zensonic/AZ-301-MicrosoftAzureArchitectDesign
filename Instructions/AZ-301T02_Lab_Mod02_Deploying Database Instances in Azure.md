@@ -159,11 +159,11 @@
 
 1. In the left pane of the Data Explorer, expand the **MemberCollection** node.
 
-1. Click the **Documents** child node within the **MemberCollection** node.
+1. Click the **Items** child node within the **MemberCollection** node.
 
-1. In the new **Documents** tab that opened, click the **New Document** button at the top of the tab.
+1. In the new **Items** tab that opened, click the **New Item** button at the top of the tab.
 
-1. In the **Documents** tab, replace the existing document with the following document:
+1. In the **Items** tab, replace the existing document with the following document:
 
     ```
     {
@@ -176,11 +176,11 @@
     }
     ```
 
-1. Click the **Save** button at the top of the **Documents** tab.
+1. Click the **Save** button at the top of the **Items** tab.
 
-1. In the **Documents** tab, click the **New Document** button at the top of the tab.
+1. In the **Items** tab, click the **New Item** button at the top of the tab.
 
-1. In the **Documents** tab, replace the existing document with the following document:
+1. In the **Items** tab, replace the existing document with the following document:
 
     ```
     {
@@ -190,7 +190,7 @@
     }
     ```
 
-1. Click the **Save** button at the top of the **Documents** tab.
+1. Click the **Save** button at the top of the **Items** tab.
 
 1. Switch back to the **Query 1** tab, re-run the default query `SELECT * FROM c` by clicking the **Execute Query** button at the top of the query editor, and review the results.
 
@@ -250,7 +250,7 @@
 
 1. Click the **Execute Query** button at the top of the query editor and review the results.
 
-> **Review**: In this exercise, you created a new Cosmos DB account, database, and collection, added sample documents to the collection, and run sample queries targeting these documents.
+> **Review**: In this exercise, you created a new Cosmos DB account, database, and collection, added sample items to the collection, and run sample queries targeting these items.
 
 ## Exercise 2: Deploy Application using Cosmos DB
 
@@ -298,7 +298,7 @@
 
 1. On the **AADesignLab0701-RG** blade, click the entry representing the newly created App Service API app.
 
-1. On the API app blade, click **Application Settings**.
+1. On the API app blade, under **Settings**, click **Configuration**.
 
 1. On the Application Settings blade, scroll down to the **Application settings** section and perform the following tasks:
 
@@ -397,15 +397,13 @@
 
 1. On the Azure Cosmos DB account blade, click **Add Azure Search**.
 
-1. On the **Import data** blade, click **Search service** and, on the **Search services** blade, click the newly created Azure Search Service instance.
+1. On the Select a search service tab, select the Azure Search service that was previously created, then click **Next: Connect to your data**.
 
-    > **Note**: You will be presented with two blades: the **Data Source** blade with the **CosmosDB** option already selected and with the **New data source** blade.
-
-1. On the **New data source** blade, perform the following tasks:
+1. On the **Connect to your data** tab, perform the following tasks:
 
     - In the **Name** text box, type **cosmosdata**.
 
-    - In the **Connection string** text box, accept the default entry.
+    - In the **Cosmos DB account** text box, accept the default entry.
 
     - In the **Database** drop-down list, select the **FinancialClubDatabase** entry.
 
@@ -430,9 +428,9 @@
 
     - Ensure that the **Query results ordered by _ts** checkbox is selected.
 
-    - Click the **OK** button.
+    - Click the **Next: Add cognitive search (optional)** button.
 
-1. On the **Cognitive Search** blade, click the **OK** button.
+1. On the **Cognitive Search** blade, click the **Skip to: Customize target index** button.
 
 1. On the **Index** blade, perform the following tasks:
 
@@ -454,7 +452,7 @@
 
     - For the **isVested** field in the table, ensure that the **RETRIEVABLE**, **FILTERABLE**, **SORTABLE**, **FACETABLE** checkboxes are selected.
 
-    - Click the **OK** button.
+    - Click the **Next: Create an indexer** button.
 
 1. On the **Create an Indexer** blade, perform the following tasks:
 
@@ -466,9 +464,7 @@
 
     - In the **Start time (UTC)** field, specify the current date and accept the default value of the time entry.
 
-    - Click the **OK** button.
-
-1. Back on the **Import data** blade, click the **OK** button.
+    - Click the **Submit** button.
 
 #### Task 3: Validate API App
 
@@ -478,7 +474,7 @@
 
 1. On the **AADesignLab0701-RG** blade, click the entry representing the App Service API app you created earlier in this lab.
 
-1. On the API app blade, click **Application settings**.
+1. On the API app blade, click **Configuration**.
 
 1. On the Application settings blade, scroll down to the **Application settings** section and perform the following tasks:
 
