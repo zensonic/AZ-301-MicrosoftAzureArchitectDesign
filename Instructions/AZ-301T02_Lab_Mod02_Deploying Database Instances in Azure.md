@@ -385,7 +385,8 @@
 
 1. On the Search service blade, click **Keys**.
 
-1. In the **Keys** pane, record the value of **PRIMARY ADMIN KEY**. You will use it later in this lab.
+1. In the **Keys** pane, record the value of **QUERY KEY**. You will use it later in this lab.
+    > **Note:** The query key is located below the primary and secondary keys, and does not have a name by default.
 
 #### Task 2: Index Cosmos DB Data in Azure Search
 
@@ -480,7 +481,9 @@
 
     - Set the value of the **Search:AccountName** setting to the name of the Azure Search instance you created earlier in this lab.
 
-    - Set the value of the **Search:QueryKey** setting to the value of the **PRIMARY KEY** of the Azure Search instance you created earlier in this lab.
+    - Set the value of the **Search:QueryKey** setting to the value of the **QUERY KEY** of the Azure Search instance you created earlier in this lab.
+    
+    - Set the value of the **Search:IndexId** setting to the value **memberindex**. 
 
     - Click the **Save** button at the top of the blade.
 
