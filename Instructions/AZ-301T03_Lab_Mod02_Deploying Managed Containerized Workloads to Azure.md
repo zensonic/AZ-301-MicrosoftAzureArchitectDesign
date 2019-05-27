@@ -135,7 +135,7 @@
     kubectl run aad0402-akscluster --image=nginx --replicas=1 --port=80
     ```
 
-    > **Note**: Make sure to use lower case letters when typing the name of the deployment.
+    > **Note**: Make sure to use lower case letters when typing the name of the deployment. You will also receive a notification that this command is deprecated and will be removed in a future version, but successfully created the cluster.
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to verify that a Kubernetes pod has been created:
 
