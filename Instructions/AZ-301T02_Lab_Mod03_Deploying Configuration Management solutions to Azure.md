@@ -268,7 +268,7 @@
 
 1. Wait for the import process to finish before you proceed to the next task. A status message on the **nx Module** blade will indicate that the module was successfully imported.
 
-    > **Note**: This process shoudl take about 2 minutes.
+    > **Note**: This process should take about 2 minutes.
 
 #### Task 2: Create Linux DSC Configuration
 

@@ -135,7 +135,7 @@
     kubectl run aad0402-akscluster --image=nginx --replicas=1 --port=80
     ```
 
-    > **Note**: Make sure to use lower case letters when typing the name of the deployment.
+    > **Note**: Make sure to use lower case letters when typing the name of the deployment. You will also receive a notification that this command is deprecated and will be removed in a future version, but successfully created the cluster.
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to verify that a Kubernetes pod has been created:
 
@@ -474,7 +474,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the sample solution by using its Azure Resource Manager template residing in a GitHub repository:
 
     ```
-    az group deployment create --resource-group $RESOURCE_GROUP --template-uri https://raw.githubusercontent.com/mspnp/solution-architectures/master/apps/devops-with-aks/azuredeploy.json --parameters @parameters.json
+    az group deployment create --resource-group $RESOURCE_GROUP --template-uri https://raw.githubusercontent.com/cjpluta/AZ-301-MicrosoftAzureArchitectDesign/master/allfiles/AZ-301T03/Module_02/LabFiles/Starter/azuredeploy.json --parameters @parameters.json
     ```
 
 1. Wait for the deployment to complete before you proceed to the next task.

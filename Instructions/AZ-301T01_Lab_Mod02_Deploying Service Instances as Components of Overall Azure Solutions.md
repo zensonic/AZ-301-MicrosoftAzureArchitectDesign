@@ -155,7 +155,7 @@
 
 1. On the function app blade, click the **Platform features** tab at the top of the blade.
 
-1. On the **Platform features** tab, click the **Application Settings** link in the **GENERAL SETTINGS** section.
+1. On the **Platform features** tab, click the **Configuration** link in the **GENERAL SETTINGS** section.
 
 1. On the **Application settings** tab, locate the **Application Settings** section. Click the **Add new setting** link and perform the following tasks:
 
@@ -177,13 +177,15 @@
 
 1. On the **Deployment Center** blade that appears, click the **External** button and then click **Continue**.
 
-1. Click **App Service Kudu build server** and click **Continue**. 
+1. Click **App Service build server** and click **Continue**. 
 
 1. Once the **Code** section is displayed, perform the following tasks
 
     - In the **Repository URL** text box, type **https://github.com/azure-labs/cognitive-services-function**.
 
     - In the **Branch** text box, type **master**.
+    
+        > **Note**: The Branch field is case sensitive.
 
     - In the **Repository Type** section, ensure that the **Git** option is selected.
 
