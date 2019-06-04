@@ -277,7 +277,8 @@
     ```
     var azure = require('azure');
     ```
-
+    > **Note**: The output will show **undefined**. This is expected.
+    
 1. At the **Cloud Shell** command prompt, type in the following command (replacing the placeholder `<Service Bus namespace connection string>` with the value of your url you recorded earlier in this lab) and press **Enter** to create a new variable for your Service Bus namespace connection string:
 
     ```
