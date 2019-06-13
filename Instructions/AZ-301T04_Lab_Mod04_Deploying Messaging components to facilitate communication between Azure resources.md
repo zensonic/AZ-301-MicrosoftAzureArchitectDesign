@@ -100,9 +100,9 @@
 
 1. At the top of the **New** blade, in the **Search the Marketplace** text box, type **Storage Account** and press **Enter**.
 
-1. On the **Everything** blade, in the search results, click **Storage Account - blob, file, table, queue**.
+1. On the **Everything** blade, in the search results, click **Storage Account**.
 
-1. On the **Storage Account - blob, file, table, queue** blade, click the **Create** button.
+1. On the **Storage Account** blade, click the **Create** button.
 
 1. On the **Create storage account** blade, perform the following tasks:
 
