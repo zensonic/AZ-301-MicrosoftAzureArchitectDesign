@@ -98,43 +98,43 @@
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the name of the CosmosDB account you created earlier in this task:
 
-    ```
+    ```sh
     COSMOSDB_NAME=$(az cosmosdb list --resource-group $RESOURCE_GROUP --query "[0].name" --output tsv)
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the primary key of the CosmosDB account you created earlier in this task:
 
-    ```
+    ```sh
     PRIMARY_KEY=$(az cosmosdb list-keys --resource-group $RESOURCE_GROUP --name $COSMOSDB_NAME | jq -r '.primaryMasterKey')
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the URI of the CosmosDB account you created earlier in this task:
 
-    ```
+    ```sh
     URI="https://$COSMOSDB_NAME.documents.azure.com:443/"
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a new CosmosDB database named **FinancialClubDatabase**:
 
-    ```
+    ```sh
     az cosmosdb database create --url-connection $URI --key $PRIMARY_KEY --db-name 'FinancialClubDatabase'
     ```
     
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a fixed collection named **MemberCollection** in the newly created database:
 
-    ```
+    ```sh
     az cosmosdb collection create --url-connection $URI --key $PRIMARY_KEY --db-name 'FinancialClubDatabase' --collection-name 'MemberCollection' --throughput 400
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to display the value of the PRIMARY_KEY variable:
 
-    ```
+    ```sh
     echo $PRIMARY_KEY
     ```
     
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to display the value of the URI variable:
 
-    ```
+    ```sh
     echo $URI
     ```
 
@@ -151,7 +151,7 @@
 
 1. In the **Query 1** tab that opened, view the default query:
 
-    ```
+    ```sql
     SELECT * FROM c
     ```
 
@@ -165,7 +165,7 @@
 
 1. In the **Items** tab, replace the existing document with the following document:
 
-    ```
+    ```json
     {
         "firstName": "Pennington",
         "lastName": "Oneal",
@@ -182,7 +182,7 @@
 
 1. In the **Items** tab, replace the existing document with the following document:
 
-    ```
+    ```json
     {
         "firstName": "Suzanne",
         "lastName": "Oneal",
@@ -196,7 +196,7 @@
 
 1. In the query editor, replace the default query with the following query:
 
-    ```
+    ```sql
     SELECT 
         c.id, 
         c.firstName, 
@@ -213,7 +213,7 @@
 
 1. In the query editor, replace the existing query with the following query:
 
-    ```
+    ```sql
     SELECT 
         c.id, 
         c.firstName, 
@@ -229,7 +229,7 @@
 
 1. In the query editor, replace the existing query with the following query:
 
-    ```
+    ```sql
     SELECT VALUE 
         c.id 
     FROM
@@ -240,7 +240,7 @@
 
 1. In the query editor, replace the existing query with the following query:
 
-    ```
+    ```sql
     SELECT VALUE { 
         "badgeNumber": SUBSTRING(c.id, 0, 8),
         "company": c.company,
@@ -326,7 +326,7 @@
 
 1. In the **Parameters** section, in the **Value** field for the **options** parameter, paste in the following JSON content:
 
-    ```
+    ```json
     {
         "quantity": 50
     }
