@@ -52,7 +52,7 @@
 
 1. In the **Choose File to Upload** dialog box, navigate to the **\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\** folder, select the **cognitive-template.json** file, and click **Open**. This will load the following content into the template editor pane:
 
-    ```
+    ```json
     {
         "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
         "contentVersion": "1.0.0.0",
@@ -209,7 +209,7 @@
 
     - In the **Request body** text box, type the following:
 
-    ```
+    ```json
     {
         "text": "I stuffed a shirt or two into my old carpet-bag, tucked it under my arm, and started for Cape Horn and the Pacific."
     }
@@ -264,7 +264,7 @@
 
 1. On the **Logic Apps Designer** blade, review the blank Logic App JSON template:
 
-    ```
+    ```json
     {
         "definition": {
             "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
@@ -279,7 +279,7 @@
 
 1. Replace the default JSON template with the following template that includes an HTTP trigger (**\\allfiles\\AZ-301T01\\Module_01\\LabFiles\\Starter\\logic-app.json**):
 
-    ```
+    ```json
     {
         "definition": {
             "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
@@ -408,25 +408,25 @@
 
 1. At the **Cloud Shell** command prompt at the bottom of the portal, type the following command and press **Enter** to import the **requests** library:
 
-    ```
+    ```python
     import requests
     ```
 
 1. At the **Cloud Shell** command prompt at the bottom of the portal, type the following command (replacing the placeholder `<logic app POST Url>` with the value of your url recorded earlier in this lab) and press **Enter** to create a variable containing the value of your logic app's url :
 
-    ```
+    ```python
     url = "<logic app POST Url>"
     ```
 
 1. At the **Cloud Shell** command prompt at the bottom of the portal, type the following command and press **Enter** to send an HTTP POST request to trigger your logic app workflow:
 
-    ```
+    ```python
     response = requests.post(url, json={'text': 'Circumambulate the city of a dreamy Sabbath afternoon. Go from Corlears Hook to Coenties Slip, and from thence, by Whitehall, northward.'})
     ```
 
 1. At the **Cloud Shell** command prompt at the bottom of the portal, type the following command and press **Enter** to display the output of the Logic App workflow:
 
-    ```
+    ```python
     print(response.status_code, response.reason, response.text)
     ```
 
@@ -452,7 +452,7 @@
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to delete the resource groups you created in this lab
 
-    ```
+    ```sh
     az group list --query "[?starts_with(name,'AADesignLab10')]".name --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'
     ```
 

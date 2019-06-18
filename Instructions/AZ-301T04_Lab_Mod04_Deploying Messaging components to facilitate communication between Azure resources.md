@@ -262,38 +262,38 @@
 
 1. At the **Cloud Shell** command prompt at the bottom of the portal, type in the following command and press **Enter** to install the **azure** package using NPM:
 
-    ```
+    ```sh
     npm install azure
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to open the interactive node terminal:
 
-    ```
+    ```sh
     node
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to import the **azure** module in Node:
 
-    ```
+    ```sh
     var azure = require('azure');
     ```
     > **Note**: The output will show **undefined**. This is expected.
     
 1. At the **Cloud Shell** command prompt, type in the following command (replacing the placeholder `<Service Bus namespace connection string>` with the value of your url you recorded earlier in this lab) and press **Enter** to create a new variable for your Service Bus namespace connection string:
 
-    ```
+    ```sh
     var connectionString = '<Service Bus namespace connection string>';
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a new client to connect to the Service Bus namespace:
 
-    ```
+    ```sh
     var serviceBusService = azure.createServiceBusService(connectionString);
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to send a message to Service Bus namespace queue using the client.
 
-    ```
+    ```sh
     serviceBusService.sendQueueMessage('messages', { body: 'Hello World' }, function(error) { console.log(error) });    
     ```
 
@@ -319,7 +319,7 @@
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to list all resource groups you created in this lab:
 
-    ```
+    ```sh
     az group list --query "[?starts_with(name,'AADesignLab11')]".name --output tsv
     ```
 
@@ -329,7 +329,7 @@
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to delete the resource groups you created in this lab
 
-    ```
+    ```sh
     az group list --query "[?starts_with(name,'AADesignLab11')]".name --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'
     ```
 
