@@ -330,9 +330,15 @@
 
 1. Navigate back to the **LinuxAutomation - State Configuration (DSC)** blade.
 
+1. On the **LinuxAutomation - State configuration (DSC)** blade, select in the **NODE** section the virtual machine you deployed in the previous exercise.
+
+1. On the virtual machine blade, click **Assign node configuration**.
+
+1. On the Assign Node Configuration blade, select the node configuration **lampserver.host** and click the **OK** button.
+
 1. Back on the **LinuxAutomation - State Configuration (DSC)** blade, click the **Refresh** button.
 
-1. In the list of DSC nodes, verify that the Linxu virtual machine has the **Compliant** status.
+1. In the list of DSC nodes, verify that the Linux virtual machine has the **Compliant** status.
 
 > **Review**: In this exercise, you created a PowerShell DSC configuration and applied the configuration to a Linux virtual machine.
 
