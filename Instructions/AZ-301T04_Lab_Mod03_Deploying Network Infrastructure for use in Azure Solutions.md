@@ -396,19 +396,11 @@
 
 1. In the list of results, click **Route tables**.
 
-1. On the **Route tables** blade, click **hub-dmz-rt**.
-
-1. On the **hub-dmz-rt** blade, review the list of routes. Note the **NEXT HOP** entry for the routes **toSpoke1** and **toSpoke2**. 
-
-1. Navigate back to the **Route tables** blade and click **spoke1-rt**.
-
-1. On the **spoke1-rt** blade, click **Peerings**.
+1. On the **Route tables** blade, click **spoke1-rt**.
 
 1. On the **spoke1-rt** blade, review the list of routes. Note the **NEXT HOP** entry for the route **toSpoke2**. 
 
 1. Navigate back to the **Route tables** blade and click **spoke2-rt**.
-
-1. On the **spoke2-rt** blade, click **Peerings**.
 
 1. On the **spoke2-rt** blade, review the list of routes. Note the **NEXT HOP** entry for the route **toSpoke1**. 
 
