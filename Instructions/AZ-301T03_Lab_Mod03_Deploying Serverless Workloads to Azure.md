@@ -367,8 +367,6 @@
 
     - Leave the **Subscription** drop-down list entry set to its default value.
 
-    - In the **Resource group** section, select the **Use existing** option.
-
     - In the **Resource group** section, ensure that **Create new** option is selected and, in the text box below, type **AADesignLab0503-RG**.
 
     - In the **App Name** text box, type a unique name for the new Function App.
