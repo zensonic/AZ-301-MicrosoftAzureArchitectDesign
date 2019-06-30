@@ -404,13 +404,13 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to retrieve the **appId** attribute of the newly created service principal:
 
     ```sh
-    APP_ID=$(echo $SERVICE_PRINCIPAL | jq .appId | tr -d '"')
+    APP_ID=$(echo $SERVICE_PRINCIPAL | jq -r .appId)
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to retrieve the **password** attribute of the newly created service principal:
 
     ```sh
-    PASSWORD=$(echo $SERVICE_PRINCIPAL | jq .password | tr -d '"')
+    PASSWORD=$(echo $SERVICE_PRINCIPAL | jq -r .password)
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create the parameters file you will use for deployment of the sample solution and open it in the vi interface:
