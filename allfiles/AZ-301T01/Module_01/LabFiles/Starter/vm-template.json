@@ -14,8 +14,8 @@
         "virtualNetworkName": "[concat('vnt', uniqueString(resourceGroup().id))]",
         "subnetName": "Linux",
         "imageReference": {
-            "publisher": "suse",
-            "offer": "opensuse-leap",
+            "publisher": "SUSE",
+            "offer": "openSUSE-Leap",
             "sku": "15-0",
             "version": "latest"
         }
