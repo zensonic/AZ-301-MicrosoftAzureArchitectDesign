@@ -131,7 +131,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command, and press **Enter** to list secrets in the key vault:
 
     ```sh
-    az keyvault secret list --vault-name $KEY_VAULT_NAME
+    az keyvault secret list --vault-name $KEY_VAULT_NAME --output json
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to display the value of the **thirdPartyKey** secret:
@@ -369,7 +369,7 @@
 
 1. Click the **Save** button at the top of the pane.
 
-#### Task 4: Deploy a Linux VM with the password paramter set by using a key vault secret.
+#### Task 4: Deploy a Linux VM with the password parameter set by using a key vault secret.
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the Azure Resource Manager template with the specified parameters file:
 
