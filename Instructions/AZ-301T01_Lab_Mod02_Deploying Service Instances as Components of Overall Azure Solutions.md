@@ -155,39 +155,39 @@
 
 1. On the function app blade, click the **Platform features** tab at the top of the blade.
 
-1. On the **Platform features** tab, click the **Configuration** link in the **GENERAL SETTINGS** section.
+1. On the **Platform features** tab, click the **Configuration** link in the **General Settings** section.
 
-1. On the **Application settings** tab, locate the **Application Settings** section. Click the **Add new setting** link and perform the following tasks:
+1. On the **Application settings** tab, locate the **Application Settings** section. Click the **+ New application setting** link and perform the following tasks:
 
-    - In the **Enter a name** text box, type **EndpointUrl**.
+    - In the **Name** text box, type **EndpointUrl**.
 
-    - In the **Enter a value** text box, enter the value of **COGNITIVEENDPOINTURL** you identified earlier.
+    - In the **Value** text box, enter the value of **cognitiveEndpointUrl** you identified earlier.
 
 1. In the **Application Settings** section, click the **Add new setting** link again and pferform the following tasks:
 
     - In the **Enter a name** text box, type **EndpointKey**.
 
-    - In the **Enter a value** text box, type the value of **COGNITIVEENDPOINTKEY** you identified earlier.
+    - In the **Enter a value** text box, type the value of **cognitiveEndpointKey** you identified earlier.
 
 1. Click the **Save** button at the top of the **Application settings** tab.
 
-1. Back on the function app blade, click the **Platform features** tab at the top of the blade.
+1. Navigate back to the function app blade and, on the **Platform features** tab, click the **Deployment Center** link in the **Code Deployment** section.
 
-1. In the **Platform features** tab, click the **Deployment Center** link in the **Code Deployment** section.
+1. On the **Deployment Center** blade that appears, click **External** and then click **Continue**.
 
-1. On the **Deployment Center** blade that appears, click the **External** button and then click **Continue**.
-
-1. Click **App Service build server** and click **Continue**. 
+1. Click **App Service build service** and click **Continue**. 
 
 1. Once the **Code** section is displayed, perform the following tasks
 
-    - In the **Repository URL** text box, type **https://github.com/azure-labs/cognitive-services-function**.
+    - In the **Repository** text box, type **https://github.com/azure-labs/cognitive-services-function**.
 
     - In the **Branch** text box, type **master**.
     
         > **Note**: The Branch field is case sensitive.
 
-    - In the **Repository Type** section, ensure that the **Git** option is selected.
+    - Set the value of **Repository Type** to **Git**.
+    
+    - Set the value of **Private Repository** to **No**.
 
     - Click the **Continue** button.
 
