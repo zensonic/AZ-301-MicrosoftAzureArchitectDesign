@@ -42,9 +42,9 @@
 
 1. At the top of the **New** blade, in the **Search the Marketplace** text box, type **Template Deployment** and press **Enter**.
 
-1. On the **Everything** blade, in the search results, click **Template Deployment**.
+1. On the **Everything** blade, in the search results, click **Template Deployment (deploy using custom templates)**.
 
-1. On the **Template deployment** blade, click the **Create** button.
+1. On the **Template deployment (deploy using custom templates)** blade, click the **Create** button.
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** link.
 
@@ -109,9 +109,9 @@
 
 1. On the deployments blade, click the name of the most recent deployment.
 
-1. On the **Microsoft.Template- Overview** blade, click **Outputs**. 
+1. On the **Microsoft.Template - Overview** blade, click **Outputs**. 
 
-1. On the **Microsoft.Template - Outputs** blade, identify the values of **COGNITIVEENDPOINTURL** and **COGNITIVEENDPOINTKEY** outputs. Record these values, since you will need them later in the lab.
+1. On the **Microsoft.Template - Outputs** blade, identify the values of **cognitiveEndpointUrl** and **cognitiveEndpointKey** outputs. Record these values, since you will need them later in the lab.
 
 #### Task 3: Deploy a function app
 
@@ -135,13 +135,13 @@
 
     - In the **Hosting Plan** drop-down list, ensure that the **Consumption Plan** entry is selected.
 
-    - In the **Runtime Stack** drop-down list, ensure that **.NET** entry is selected. 
-
     - In the **Location** drop-down list, select the Azure region to which you deployed an instance of Cognitive Service in the previous task.
+
+    - In the **Runtime Stack** drop-down list, ensure that **.NET Core** entry is selected. 
 
     - In the **Storage** section, ensure that the **Create new** option is selected and accept the default value of the Storage Account name. 
 
-    - In the **Application Insights** section, set the extension to **Disabled**.
+    - In the **Application Insights** section, set the option to **Disabled**.
 
     - Click the **Create** button.
 
