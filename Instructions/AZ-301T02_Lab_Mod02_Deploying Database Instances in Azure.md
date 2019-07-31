@@ -369,11 +369,11 @@
 
     - In the **Location** drop-down list, select the Azure region matching or near the location where you deployed Cosmos DB resource earlier in this labb
 
-    - Click **Pricing tier**.
+    - Click **Change Pricing Tier**.
 
-    - On the **Choose your pricing tier** blade, click **Free** and then click the **Select** button.
+    - On the **Select Pricing Tier** blade, click **Free** and then click the **Select** button.
 
-    - Click the **Create** button.
+    - Click the **Review + Create** button, review the settings then click **Create**.
 
 1. Wait for the provisioning to complete before you proceed to the next step.
 
