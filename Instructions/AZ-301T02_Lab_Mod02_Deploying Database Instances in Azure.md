@@ -105,7 +105,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the primary key of the CosmosDB account you created earlier in this task:
 
     ```sh
-    PRIMARY_KEY=$(az cosmosdb list-keys --resource-group $RESOURCE_GROUP --name $COSMOSDB_NAME | jq -r '.primaryMasterKey')
+    PRIMARY_KEY=$(az cosmosdb keys list --resource-group $RESOURCE_GROUP --name $COSMOSDB_NAME --ouput json | jq -r '.primaryMasterKey')
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the URI of the CosmosDB account you created earlier in this task:
