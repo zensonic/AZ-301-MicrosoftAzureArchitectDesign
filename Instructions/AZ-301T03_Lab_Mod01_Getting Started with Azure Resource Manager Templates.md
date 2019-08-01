@@ -180,7 +180,7 @@
 
     - In the **Cloud Shell region** drop-down list, select the Azure region matching or near the location where you deployed resources in this lab
 
-    - Resource group: ensure that the **Create new** option is selected and, in the text box, type **AADesignLab0202-RG**.
+    - Resource group: ensure that the **Use Existing** option is selected and select **AADesignLab0201-RG**.
 
     - In the **Storage account** section, ensure that the **Create new** option is selected and then, in the text box below, type a unique name consisting of a combination of between 3 and 24 characters and digits. 
 
@@ -268,6 +268,11 @@
     LOCATION=$(az group list --query "[?name == 'AADesignLab0201-RG'].location" --output tsv)
     ```
 
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create the **AADesignLab0202-RG** resource group.
+
+    ```sh
+    az group create --location $LOCATION --name $RESOURCE_GROUP
+    ```
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy a virtual network by using the Azure Building Blocks:
 
     ```sh
