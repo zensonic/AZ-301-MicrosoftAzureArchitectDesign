@@ -364,7 +364,12 @@
     ```sh
     LOCATION=$(az group list --query "[?name == 'AADesignLab08-hub-vnet-rg'].location" --output tsv)
     ```
+1. At the **Cloud Shell** command prompt, type in the following command to create the resource group that will be used in the deployment.
 
+    ```sh
+    az group create --name $RESOURCE_GROUP_HUB_NVA --location $LOCATION
+    ```
+    
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the NVA component of the Hub-and-Spoke topology by using the Azure Building Blocks:
 
     ```sh
