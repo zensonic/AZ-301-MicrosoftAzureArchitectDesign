@@ -93,7 +93,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to view a list of possible runtimes for a Linux-based App Service web app instance: 
 
     ```sh
-    az webapp list-runtimes --linux
+    az webapp list-runtimes --linux --output tsv
     ``` 
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a new variable which value is a randomly generated string that you will use as the name of a new web app:
