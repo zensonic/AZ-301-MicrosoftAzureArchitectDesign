@@ -296,7 +296,7 @@
 
 1. Close the **Cloud Shell** pane.
 
-> **Review**: In this exercise, you deployed an Azure virtual network by using an Azure Resource Manager template from the Azure portal
+> **Review**: In this exercise, you deployed an Azure virtual network by using Azure Building Blocks templates from the cloud shell.
 
 
 ## Exercise 3: Remove lab resources
