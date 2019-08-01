@@ -247,10 +247,10 @@
     ```sh
     LOCATION=$(az group list --query "[?name == 'AADesignLab08-hub-vnet-rg'].location" --output tsv)
     ```
-1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the hub component of the Hub-and-Spoke topology by using the Azure Building Blocks:
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create the resource group for the deployment:
 
     ```sh
-    azbb -g $RESOURCE_GROUP_SPOKE_VNET -s $SUBSCRIPTION_ID -l $LOCATION -p ~/hub-vnet.json --deploy
+    az group create --name $RESOURCE_GROUP_SPOKE1_VNET --location $LOCATION
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the first spoke component of the Hub-and-Spoke topology by using the Azure Building Blocks:
@@ -286,10 +286,10 @@
     ```sh
     LOCATION=$(az group list --query "[?name == 'AADesignLab08-hub-vnet-rg'].location" --output tsv)
     ```
-1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the hub component of the Hub-and-Spoke topology by using the Azure Building Blocks:
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create the resource group for the deployment:
 
     ```sh
-    azbb -g $RESOURCE_GROUP_SPOKE2_VNET -s $SUBSCRIPTION_ID -l $LOCATION -p ~/hub-vnet.json --deploy
+    az group create --name $RESOURCE_GROUP_SPOKE2_VNET --location $LOCATION
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the second spoke component of the Hub-and-Spoke topology by using the Azure Building Blocks:
@@ -441,13 +441,11 @@
 
     - In the **Virtual machine** drop-down list, leave the default entry.
 
-    - Leave the **Port** text box blank. 
-
     - Ensure that the **Destination** option is set to **Specify manually**.
 
     - In the **URI, FQDN, or IPv4** text box, type **10.2.0.68** entry.
 
-    - In the **Port** text, type 3389. 
+    - In the **Destination Port** text, type 3389. 
 
     - Click the **Check** button.
 
