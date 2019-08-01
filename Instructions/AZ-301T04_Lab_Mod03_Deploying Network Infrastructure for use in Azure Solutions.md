@@ -204,6 +204,12 @@
     ```sh
     LOCATION='<Azure region>'
     ```
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create the resource group for the deployment.
+
+    ```sh
+    az group create --name $RESOURCE_GROUP_HUB_VNET --location $LOCATION
+    ```
+
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the hub component of the Hub-and-Spoke topology by using the Azure Building Blocks:
 
@@ -241,6 +247,11 @@
     ```sh
     LOCATION=$(az group list --query "[?name == 'AADesignLab08-hub-vnet-rg'].location" --output tsv)
     ```
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the hub component of the Hub-and-Spoke topology by using the Azure Building Blocks:
+
+    ```sh
+    azbb -g $RESOURCE_GROUP_SPOKE_VNET -s $SUBSCRIPTION_ID -l $LOCATION -p ~/hub-vnet.json --deploy
+    ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the first spoke component of the Hub-and-Spoke topology by using the Azure Building Blocks:
 
@@ -274,6 +285,11 @@
 
     ```sh
     LOCATION=$(az group list --query "[?name == 'AADesignLab08-hub-vnet-rg'].location" --output tsv)
+    ```
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the hub component of the Hub-and-Spoke topology by using the Azure Building Blocks:
+
+    ```sh
+    azbb -g $RESOURCE_GROUP_SPOKE2_VNET -s $SUBSCRIPTION_ID -l $LOCATION -p ~/hub-vnet.json --deploy
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the second spoke component of the Hub-and-Spoke topology by using the Azure Building Blocks:
