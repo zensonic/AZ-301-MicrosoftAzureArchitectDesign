@@ -363,9 +363,7 @@
 
 1. On the key vault blade, click **Access policies**.
 
-1. On the **Access policies** blade, click the **Click to show advanced access policies** link.
-
-1. Select the **Enable access to Azure Resource Manager for template deployment** checkbox.
+1. On the **Access policies** blade, under the **Enable access to:** area, select the **Azure Resource Manager for template deployment** checkbox.
 
 1. Click the **Save** button at the top of the pane.
 
