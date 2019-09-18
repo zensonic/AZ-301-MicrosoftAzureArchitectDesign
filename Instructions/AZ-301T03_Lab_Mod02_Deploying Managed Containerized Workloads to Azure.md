@@ -163,7 +163,7 @@
     kubectl get service --watch
     ```
 
-1. Wait until the value in the **EXTERNAL-IP** column for the **aad0402-akscluster** entry changes from **<pending>** to a public IP address, then press **Ctrl-C** key combination. Note the public IP address in the **EXTERNAL-IP** column for **aad0402-akscluster**. 
+1. Wait until the value in the **EXTERNAL-IP** column for the **aad0402-akscluster** entry changes from **\<pending\>** to a public IP address, then press **Ctrl-C** key combination. Note the public IP address in the **EXTERNAL-IP** column for **aad0402-akscluster**. 
 
 1. Start Microsoft Edge and browse to the IP address you obtained in the previous step. Verify that Microsoft Edge displays a web page with the **Welcome to nginx!** message. 
 
@@ -280,7 +280,7 @@
     kubectl get service azure-vote-front --watch
     ```
 
-1. Wait until the value in the **EXTERNAL-IP** column for the **azure-vote-front** entry changes from **<pending>** to a public IP address, then press **Ctrl-C** key combination. Note the public IP address in the **EXTERNAL-IP** column for **azure-vote-front**. 
+1. Wait until the value in the **EXTERNAL-IP** column for the **azure-vote-front** entry changes from **\<pending\>** to a public IP address, then press **Ctrl-C** key combination. Note the public IP address in the **EXTERNAL-IP** column for **azure-vote-front**. 
 
 1. Start Microsoft Edge and browse to the IP address you obtained in the previous step. Verify that Microsoft Edge displays a web page with the **Azure Voting App** message. 
 
