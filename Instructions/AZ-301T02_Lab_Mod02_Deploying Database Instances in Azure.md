@@ -468,7 +468,7 @@
 
     - In the **Start time (UTC)** field, specify the current date and accept the default value of the time entry.
 
-    - Click the **Submit** button.
+    - Ensure that the **Track deletions** checkbox is clear and click the **Submit** button.
 
 #### Task 3: Validate API App
 
