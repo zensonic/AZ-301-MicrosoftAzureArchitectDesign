@@ -281,13 +281,13 @@
             "actions": {},
             "contentVersion": "1.0.0.0",
             "outputs": {},
-            "parameters": {},
             "triggers": {}
-        }
+        },
+        "parameters": {}
     }
     ```
 
-1. Replace the default JSON template with the following template that includes an HTTP trigger (****\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\logic-app.json**):
+1. Replace the default JSON template with the following template that includes an HTTP trigger (****\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\logic-app.json**) and save your changes:
 
     ```json
     {
@@ -296,7 +296,6 @@
             "actions": {},
             "contentVersion": "1.0.0.0",
             "outputs": {},
-            "parameters": {},
             "triggers": {
                 "manual": {
                     "inputs": {
@@ -314,7 +313,8 @@
                     "type": "Request"
                 }
             }
-        }
+        },
+        "parameters": {}
     }
     ```
 
@@ -336,13 +336,13 @@
 
 1. In the **DetermineLanguage** step, perform the following tasks:
 
-    - Click the **Show advanced options** link to display all options.
-
     - In the **Request Body** text box, type **@triggerBody()**.
 
+    - In the **Add new parameter** drop-down list, select the **Method** checkbox.
+    
     - In the **Method** drop-down list, select the **POST** option.
 
-1. Click the **+ New Step** button in the designer. Click the **Add an action** button to open the dialog for creating an action.
+1. Click the **+ New Step** button in the designer. 
 
 1. In the **Choose an action** dialog that displays, perform the following tasks:
 
@@ -356,9 +356,9 @@
 
 1. In the **DetermineKeyPhrases** step, perform the following tasks:
 
-    - Click the **Show advanced options** link to display all options.
-
     - In the **Request Body** text box, enter the value **@body('DetermineLanguage')**.
+
+    - In the **Add new parameter** drop-down list, select the **Method** checkbox.
 
     - In the **Method** drop-down list, select the **POST** option.
 
@@ -374,6 +374,8 @@
 
     - In the **Status Code** text box, ensure that the value **200** is specified.
 
+    - Leave **Headers** entries unchanged 
+    
     - In the **Body** text box, type **@body('DetermineKeyPhrases')**.
 
 1. At the top of the **Logic Apps Designer** blade, click the **Save** button to persist your workflow.
