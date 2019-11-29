@@ -352,23 +352,23 @@
 
 ## Exercise 3: Connect Cosmos DB to Azure Search
 
-#### Task 1: Create Azure Search Instance
+#### Task 1: Create Azure Cognitive Search Instance
 
 1. In the upper left corner of the Azure portal, click **Create a resource**.
 
 1. At the top of the **New** blade, in the **Search the Marketplace** text box, type **Search** and press **Enter**.
 
-1. On the **Everything** blade, in the search results, click **Azure Search**.
+1. On the **Showing All Results** blade, in the search results, click **Azure Cognitive Search**.
 
-1. On the **Azure Search** blade, click the **Create** button.
+1. On the **Azure Cognitive Search** blade, click the **Create** button.
 
 1. On the **New Search Service** blade, perform the following tasks:
-
-    - In the **URL** text box, enter a globally unique name. Record its value. You will use it later in this lab.
 
     - Leave the **Subscription** drop-down list entry set to its default value.
 
     - In the **Resource group** section, select the **Use existing** option and then, in the drop-down list, select **AADesignLab0701-RG**.
+    
+     - In the **URL** text box, enter a globally unique name. Record its value. You will use it later in this lab.
 
     - In the **Location** drop-down list, select the Azure region matching or near the location where you deployed Cosmos DB resource earlier in this labb
 
