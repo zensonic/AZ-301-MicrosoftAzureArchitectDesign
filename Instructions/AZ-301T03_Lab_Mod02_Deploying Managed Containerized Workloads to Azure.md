@@ -286,9 +286,10 @@
 
 #### Task 2: Autoscale Kubernetes pods.
 
-1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to download a sample containerized application:
+1. At the **Cloud Shell** command prompt, type in the following commands and press **Enter** after each to change the current directory and download a sample containerized application:
 
     ```
+    cd ..
     git clone https://github.com/kubernetes-incubator/metrics-server.git
     ```
 
