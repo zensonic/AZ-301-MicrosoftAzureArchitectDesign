@@ -44,7 +44,7 @@
 
 1. If this is your first time opening the **Cloud Shell** using your subscription, you will see a wizard to configure **Cloud Shell** for first-time usage. When prompted, in the **Welcome to Azure Cloud Shell** pane, click **Bash (Linux)**.
 
-    > **Note**: If you do not see the configuration options for **Cloud Shell**, this is most likely because you are using an existing subscription with this course's labs. If so, proceed directly to the next task. 
+    > **Note**: If you do not see the configuration options for **Cloud Shell**, this is most likely because you are using an existing subscription with this course's labs. If so, proceed directly to the next task.
 
 1. In the **You have no storage mounted** pane, click **Show advanced settings**, perform the following tasks:
 
@@ -54,7 +54,7 @@
 
     - In the **Resource group** section, ensure that the **Create new** option is selected and then, in the text box below, type **AADesignLab0901-RG**.
 
-    - In the **Storage account** section, ensure that the **Create new** option is selected and then, in the text box below, type a unique name consisting of a combination of between 3 and 24 characters and digits. 
+    - In the **Storage account** section, ensure that the **Create new** option is selected and then, in the text box below, type a unique name consisting of a combination of between 3 and 24 characters and digits.
 
     - In the **File share** section, ensure that the **Create new** option is selected and then, in the text box below, type **cloudshell**.
 
@@ -92,11 +92,11 @@
 
 #### Task 4: Create a Web App instance
 
-1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to view a list of possible runtimes for a Linux-based App Service web app instance: 
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to view a list of possible runtimes for a Linux-based App Service web app instance:
 
     ```sh
     az webapp list-runtimes --linux --output tsv
-    ``` 
+    ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a new variable which value is a randomly generated string that you will use as the name of a new web app:
 
@@ -128,7 +128,7 @@
 
 1. Close the new browser tab and return to the browser tab displaying the Azure portal.
 
-> **Review**: In this exercise, you created a Linux-based App Service Plan that contained a blank web app. 
+> **Review**: In this exercise, you created a Linux-based App Service Plan that contained a blank web app.
 
 
 ## Exercise 2: Deploy Web App code
@@ -164,7 +164,7 @@
     > **Note**: In case the command fails due to duplicate web app name, re-run the last two steps until the command completes successfully
 
 
-1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**. 
+1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**.
 
 1. In the **Open** dialog box, navigate to the **\\allfiles\\AZ-301T03\\Module_03\\Labfiles\\Starter\\** folder, select the **github.json** file, and click **Open**. The file contains the following Azure Resource Manager template:
 
@@ -211,25 +211,25 @@
     }
     ```
 
-1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**. 
+1. In the **Cloud Shell** pane, click the **Upload/Download files** icon and, in the drop-down menu, click **Upload**.
 
 1. In the **Open** dialog box, navigate to the **\\allfiles\\AZ-301T03\\Module_03\\Labfiles\\Starter\\** folder, select the **parameters.json** file, and click **Open**. The file contains the following parameters for the Azure Resource Manager template you uploaded previously:
 
     ```json
     {
-      "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-      "contentVersion": "1.0.0.0",
-      "parameters": {
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
         "webAppName": {
-          "value": "$WEBAPPNAME2"
+        "value": "$WEBAPPNAME2"
         },
-        "repositoryUrl": {		
-          "value": "$REPOSITORY_URL"
+        "repositoryUrl": {
+        "value": "$REPOSITORY_URL"
         },
         "branch": {
-          "value": "master"
+        "value": "master"
         }
-      }
+    }
     }
     ```
 
@@ -334,9 +334,9 @@
 
 1. On the web app blade, click the **Browse** button at the top of the blade.
 
-    > **Note**: If the application does not appear, switch to the web app blade, click **Restart** button at the top of the blade and then click **Browse** again. 
+    > **Note**: If the application does not appear, switch to the web app blade, click **Restart** button at the top of the blade and then click **Browse** again.
 
-1. Review the blog application deployed from Docker Hub. 
+1. Review the blog application deployed from Docker Hub.
 
 1. Close the new browser tab and return to the browser tab displaying the Azure portal.
 
