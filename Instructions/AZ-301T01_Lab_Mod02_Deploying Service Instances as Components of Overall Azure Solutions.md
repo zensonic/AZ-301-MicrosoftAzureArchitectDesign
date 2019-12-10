@@ -99,7 +99,7 @@
 
     - Click the **Purchase** button.
 
-1. Wait for the deployment to complete before you proceed to the next step. 
+1. Wait for the deployment to complete before you proceed to the next step.
 
 1. In the hub menu of the Azure portal, click **Resource groups**.
 
@@ -109,7 +109,7 @@
 
 1. On the deployments blade, click the name of the most recent deployment.
 
-1. On the **Microsoft.Template - Overview** blade, click **Outputs**. 
+1. On the **Microsoft.Template - Overview** blade, click **Outputs**.
 
 1. On the **Microsoft.Template - Outputs** blade, identify the values of **cognitiveEndpointUrl** and **cognitiveEndpointKey** outputs. Record these values, since you will need them later in the lab.
 
@@ -130,16 +130,16 @@
     - Resource group: **AADesignLab1001-RG**.
 
     - Function App name: a globally unique name
-    
+
     - Publish: **Code**
-    
+
     - Runtime stack: **.NET Core**
 
     - Region: the Azure region to which you deployed an instance of Cognitive Service in the previous task
 
 1. On the **Hosting** tab of the **Function App** blade, specify the following and click **Next: Monitoring >**:
 
-    - Storage account: accept the default value of the Storage Account name. 
+    - Storage account: accept the default value of the Storage Account name.
 
     - Operating System: **Windows**
 
@@ -151,7 +151,7 @@
 
 1. On the **Review + create** tab of the **Function App** blade, click **Create**:
 
-1. Wait for the provisioning of the function app to complete before you proceed to the next step. 
+1. Wait for the provisioning of the function app to complete before you proceed to the next step.
 
 1. In the hub menu of the Azure portal, click **Resource groups**.
 
@@ -168,7 +168,7 @@
     - In the **Name** text box, type **EndpointUrl**.
 
     - In the **Value** text box, enter the value of **cognitiveEndpointUrl** you identified earlier followed by **text/analytics/v2.0**.
-    
+
     - Leave the **Deployment slot setting** checkbox cleared.
 
 1. In the **Application Settings** section, click the **+ New application setting** link again, perform the following tasks, and click **OK**:
@@ -176,7 +176,7 @@
     - In the **Name** text box, type **EndpointKey**.
 
     - In the **Value** text box, type the value of **cognitiveEndpointKey** you identified earlier.
-    
+
     - Leave the **Deployment slot setting** checkbox cleared.
 
 1. Click the **Save** button at the top of the **Application settings** tab.
@@ -185,23 +185,23 @@
 
 1. On the **Deployment Center** blade, click **External** and then click **Continue**.
 
-1. Click **App Service build service** and click **Continue**. 
+1. Click **App Service build service** and click **Continue**.
 
 1. Once the **Code** section is displayed, perform the following tasks
 
     - In the **Repository** text box, type **https://github.com/azure-labs/cognitive-services-function**.
 
     - In the **Branch** text box, type **master**.
-    
+
         > **Note**: The Branch field is case sensitive.
 
     - Set the value of **Repository Type** to **Git**.
-    
+
     - Set the value of **Private Repository** to **No**.
 
     - Click the **Continue** button.
 
-1. Click **Finish** and wait for the deployment to complete before you proceed to the next task. 
+1. Click **Finish** and wait for the deployment to complete before you proceed to the next task.
 
     > **Note**: You will be able to determine that the first deployment has completed by monitoring the **Deployments** tab. This tab updates automatically.
 
@@ -247,18 +247,18 @@
 1. On the **Create logic app** blade, perform the following tasks:
 
     - In the **Name** text box, enter the value **CognitiveWorkflow**.
-    
+
     - Leave the **Subscription** drop-down list entry set to its default value.
 
     - In the **Resource group** section, select the **Use existing** option and then, in the drop-down list, select **AADesignLab1001-RG**.
 
-    - In the **Location** drop-down list, select the same Azure region you chose in the previous exercise of this lab. 
+    - In the **Location** drop-down list, select the same Azure region you chose in the previous exercise of this lab.
 
     - In the **Log Analytics** section, ensure that the **Off** button is selected.
 
     - Click the **Create** button.
 
-1. Wait for the provisioning to complete before you proceed to the next task. 
+1. Wait for the provisioning to complete before you proceed to the next task.
 
 #### Task 2: Configure logic app steps
 
@@ -339,10 +339,10 @@
     - In the **Request Body** text box, type **@triggerBody()**.
 
     - In the **Add new parameter** drop-down list, select the **Method** checkbox.
-    
+
     - In the **Method** drop-down list, select the **POST** option.
 
-1. Click the **+ New Step** button in the designer. 
+1. Click the **+ New Step** button in the designer.
 
 1. In the **Choose an action** dialog that displays, perform the following tasks:
 
@@ -362,7 +362,7 @@
 
     - In the **Method** drop-down list, select the **POST** option.
 
-1. Click the **+ New Step** button in the designer. 
+1. Click the **+ New Step** button in the designer.
 
 1. In the **Choose an action** dialog that displays, perform the following tasks:
 
@@ -374,8 +374,8 @@
 
     - In the **Status Code** text box, ensure that the value **200** is specified.
 
-    - Leave **Headers** entries unchanged 
-    
+    - Leave **Headers** entries unchanged
+
     - In the **Body** text box, type **@body('DetermineKeyPhrases')**.
 
 1. At the top of the **Logic Apps Designer** blade, click the **Save** button to persist your workflow.
@@ -392,7 +392,7 @@
 
 1. If this is your first time opening the **Cloud Shell** using your subscription, you will see a wizard to configure **Cloud Shell** for first-time usage. When prompted, in the **Welcome to Azure Cloud Shell** pane, click **Bash (Linux)**.
 
-    > **Note**: If you do not see the configuration options for **Cloud Shell**, this is most likely because you are using an existing subscription with this course's labs. If so, proceed directly to the next task. 
+    > **Note**: If you do not see the configuration options for **Cloud Shell**, this is most likely because you are using an existing subscription with this course's labs. If so, proceed directly to the next task.
 
 1. In the **You have no storage mounted** pane, click **Show advanced settings**, perform the following tasks:
 
@@ -402,7 +402,7 @@
 
     - In the **Resource group** section, select the **Use existing** option and then, in the drop-down list, select **AADesignLab1001-RG**.
 
-    - In the **Storage account** section, ensure that the **Create new** option is selected and then, in the text box below, type a unique name consisting of a combination of between 3 and 24 characters and digits. 
+    - In the **Storage account** section, ensure that the **Create new** option is selected and then, in the text box below, type a unique name consisting of a combination of between 3 and 24 characters and digits.
 
     - In the **File share** section, ensure that the **Create new** option is selected and then, in the text box below, type **cloudshell**.
 
