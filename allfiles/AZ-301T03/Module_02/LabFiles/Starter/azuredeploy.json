@@ -169,7 +169,7 @@
     {
       "apiVersion": "2017-08-31",
       "type": "Microsoft.ContainerService/managedClusters",
-      "location": "eastus",
+      "location": "[variables('location')]",
       "name": "[variables('kubernetesClusterName')]",
       "properties": {
         "kubernetesVersion": "[variables('kubernetesVersion')]",
