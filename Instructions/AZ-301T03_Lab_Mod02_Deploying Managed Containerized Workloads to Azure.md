@@ -256,9 +256,9 @@
 
     ```yaml
     resources:
-    requests:
+      requests:
         cpu: 250m
-    limits:
+      limits:
         cpu: 500m
     ```
 
