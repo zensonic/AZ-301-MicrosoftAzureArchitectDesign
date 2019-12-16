@@ -217,19 +217,19 @@
 
     ```json
     {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
+      "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
         "webAppName": {
-        "value": "$WEBAPPNAME2"
+          "value": "$WEBAPPNAME2"
         },
         "repositoryUrl": {
-        "value": "$REPOSITORY_URL"
+          "value": "$REPOSITORY_URL"
         },
         "branch": {
-        "value": "master"
+          "value": "master"
         }
-    }
+      }
     }
     ```
 

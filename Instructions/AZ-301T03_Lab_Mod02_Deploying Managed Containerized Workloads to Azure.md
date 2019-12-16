@@ -256,9 +256,9 @@
 
     ```yaml
     resources:
-    requests:
+      requests:
         cpu: 250m
-    limits:
+      limits:
         cpu: 500m
     ```
 
@@ -424,25 +424,25 @@
 
     ```json
     {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
+      "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
         "spClientId": {
-        "value": "$APP_ID"
+          "value": "$APP_ID"
         },
         "spClientSecret": {
-        "value": "$PASSWORD"
+          "value": "$PASSWORD"
         },
         "linuxAdminUsername": {
-        "value": "Student"
+          "value": "Student"
         },
         "linuxAdminPassword": {
-        "value": "Pa55w.rd1234"
+          "value": "Pa55w.rd1234"
         },
         "linuxSSHPublicKey": {
-        "value": "$PUBLIC_KEY_REGEX"
+          "value": "$PUBLIC_KEY_REGEX"
         }
-    }
+      }
     }
     ```
 

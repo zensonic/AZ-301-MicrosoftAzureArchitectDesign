@@ -107,7 +107,7 @@
                     {
                         "name": "[concat(parameters('subnetNamePrefix'), variables('subnetNameSuffix'))]",
                         "properties": {
-                        "addressPrefix": "[parameters('subnetIPPrefix')]"
+                            "addressPrefix": "[parameters('subnetIPPrefix')]"
                         }
                     }
                 ],
