@@ -415,6 +415,7 @@
 
     - In the **Query** field, enter the following SQL query:
 
+        ```sql
         SELECT
             c.id,
             c.firstName,
@@ -429,6 +430,7 @@
         WHERE
             c._ts >= @HighWaterMark
         ORDER BY c._ts
+        ```
 
     - Ensure that the **Query results ordered by _ts** checkbox is selected.
 
