@@ -317,7 +317,7 @@
     kubectl get pods
     ```
 
-    > **Note**: Verify that the number of replicas incrased to 3. If that is not the case, wait one minute and rerun the two previous steps.
+    > **Note**: Verify that the number of replicas increased to 3. If that is not the case, wait one minute and rerun the two previous steps.
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to delete the deployment:
 
