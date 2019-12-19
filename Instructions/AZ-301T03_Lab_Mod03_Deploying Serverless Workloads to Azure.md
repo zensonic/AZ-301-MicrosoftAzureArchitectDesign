@@ -361,19 +361,19 @@
 
 1. In the **Load a quickstart template** pane, in the **Select a template** drop-down list, select the **201-function-app-dedicated-github-deploy** template.
 
-1. Click the **OK** button.
+1. Click the **Select template** button.
 
-1. Back on the **Edit template** blade, click the **Save** button to persist the template.
-
-1. Back on the **Custom deployment** blade, perform the following tasks:
+1. On the **Provision a function app with source deployed from GitHub** blade, perform the following tasks:
 
     - Leave the **Subscription** drop-down list entry set to its default value.
 
     - In the **Resource group** section, ensure that **Create new** option is selected and, in the text box below, type **AADesignLab0503-RG**.
 
-    - In the **App Name** text box, type a unique name for the new Function App.
+    - Leave the **Location** text box set to its default value.
+    
+    - In the **App Name** text box, accept the default value.
 
-    - In the **Sku** drop-down list, select the **Basic** option.
+    - In the **Sku** text box, type **B1**.
 
     - Leave the **Worker Size** drop-down list set to its default value.
 
@@ -382,7 +382,7 @@
     - Leave the **Repo URL** field set to its default value.
 
     - Leave the **Branch** text box set to its default value.
-
+    
     - Leave the **Location** text box set to its default value.
 
     - In the **Terms and Conditions** section, select the **I agree to the terms and conditions stated above** checkbox.
