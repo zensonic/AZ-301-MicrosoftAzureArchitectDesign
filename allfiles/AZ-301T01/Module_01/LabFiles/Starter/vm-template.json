@@ -15,8 +15,8 @@
         "subnetName": "Linux",
         "imageReference": {
             "publisher": "SUSE",
-            "offer": "openSUSE-Leap",
-            "sku": "15-0",
+            "offer": "SLES",
+            "sku": "15",
             "version": "latest"
         }
     },
