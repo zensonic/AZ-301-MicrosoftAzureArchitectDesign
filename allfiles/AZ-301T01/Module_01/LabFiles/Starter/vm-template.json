@@ -16,8 +16,8 @@
         "imageReference": {
             "publisher": "SUSE",
             "offer": "SLES",
-            "sku": "15",
-            "version": "latest"
+            "sku": "12-SP4",
+            "version": "2019.11.13"
         }
     },
     "resources": [
