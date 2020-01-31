@@ -196,7 +196,7 @@
 
 1. On the resource group blade, click the entry representing the newly created storage account.
 
-1. With the **Overview** selection active, on the storage account blade, click **Blobs**.
+1. With the **Overview** selection active, on the storage account blade, click **Containers**.
 
 1. Click the **Container** button at the top of the blade.
 
