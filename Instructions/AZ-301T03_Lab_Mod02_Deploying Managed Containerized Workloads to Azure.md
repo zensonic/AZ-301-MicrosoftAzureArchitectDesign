@@ -296,7 +296,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to install **Metrics Server**:
 
     ```
-    kubectl create -f ~/metrics-server/deploy/1.8+/
+    kubectl create -f ~/metrics-server/deploy/kubernetes/
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to configure autoscaling for the **azure-vote-front** deployment:
