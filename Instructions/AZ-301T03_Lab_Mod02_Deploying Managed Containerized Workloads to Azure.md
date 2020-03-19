@@ -356,7 +356,7 @@
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to generate the SSH key pair that will be used to authenticate when accessing the Linux VMs running the Jenkins instance and Grafana console:
 
-    ```
+    ```sh
     ssh-keygen -t rsa -b 2048
     ```
 
