@@ -167,7 +167,7 @@
 
     - In the **Name** text box, type **EndpointUrl**.
 
-    - In the **Value** text box, enter the value of **cognitiveEndpointUrl** you identified earlier followed by **text/analytics/v2.0**.
+    - In the **Value** text box, enter the value of **cognitiveEndpointUrl** you identified earlier followed by **text/analytics/v2.1/languages**.
 
     - Leave the **Deployment slot setting** checkbox cleared.
 
@@ -189,7 +189,7 @@
 
 1. Once the **Code** section is displayed, perform the following tasks
 
-    - In the **Repository** text box, type **https://github.com/azure-labs/cognitive-services-function**.
+    - In the **Repository** text box, type **https://github.com/polichtm/cognitive-services-function**.
 
     - In the **Branch** text box, type **master**.
 
