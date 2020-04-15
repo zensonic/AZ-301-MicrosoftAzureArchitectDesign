@@ -246,11 +246,11 @@
 
 1. On the **Create logic app** blade, perform the following tasks:
 
-    - In the **Name** text box, enter the value **CognitiveWorkflow**.
-
     - Leave the **Subscription** drop-down list entry set to its default value.
 
     - In the **Resource group** section, select the **Use existing** option and then, in the drop-down list, select **AADesignLab1001-RG**.
+
+    - In the **Name** text box, enter the value **CognitiveWorkflow**.
 
     - In the **Location** drop-down list, select the same Azure region you chose in the previous exercise of this lab.
 
@@ -287,7 +287,7 @@
     }
     ```
 
-1. Replace the default JSON template with the following template that includes an HTTP trigger (****\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\logic-app.json**) and save your changes:
+1. Replace the default JSON template with the following template that includes an HTTP trigger (**\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\logic-app.json**) and save your changes:
 
     ```json
     {
