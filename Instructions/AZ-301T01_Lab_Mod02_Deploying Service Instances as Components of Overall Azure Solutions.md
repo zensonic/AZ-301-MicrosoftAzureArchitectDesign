@@ -287,7 +287,7 @@
     }
     ```
 
-1. Replace the default JSON template with the following template that includes an HTTP trigger (**\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\logic-app.json**) and save your changes:
+1. Replace the default JSON template with the following template that includes an HTTP trigger (**\\\\allfiles\\AZ-301T01\\Module_02\\LabFiles\\Starter\\logic-app.json**) and save your changes:
 
     ```json
     {
