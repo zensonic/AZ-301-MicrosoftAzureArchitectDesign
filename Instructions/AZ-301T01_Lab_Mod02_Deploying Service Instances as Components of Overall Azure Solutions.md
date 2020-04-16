@@ -165,9 +165,9 @@
 
 1. On the **Application settings** tab, click the **+ New application setting** link, perform the following tasks, and click **OK**:
 
-    - In the **Name** text box, type **EndpointUrl**.
+    - In the **Name** text box, type **EndpointUrl**
 
-    - In the **Value** text box, enter the value of **cognitiveEndpointUrl** you identified earlier followed by **text/analytics/v2.1/languages**.
+    - In the **Value** text box, enter the value of **cognitiveEndpointUrl** 
 
     - Leave the **Deployment slot setting** checkbox cleared.
 
