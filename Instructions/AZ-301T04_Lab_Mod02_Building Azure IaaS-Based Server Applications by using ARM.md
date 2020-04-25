@@ -537,6 +537,12 @@
     sed -i.bak2 's/"adminPassword": ""/"adminPassword": "Pa55w.rd1234"/' ./reference-architectures/virtual-machines/single-vm/parameters/windows/single-vm.json
     ```
 
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to set the value of the size parameter of the virtual machines to **Standard_D2s_v3** in the Building Blocks parameter file:
+
+    ```sh
+    sed -i.bak3 's/"Standard_DS1_v2"/"Standard_D2s_v3"/g' ./reference-architectures/virtual-machines/single-vm/parameters/windows/single-vm.json
+    ```
+
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to verify that the parameter values were successfully changed in the Building Blocks parameter file:
 
     ```sh
@@ -629,6 +635,12 @@
 
     ```sh
     sed -i.bak2 's/"sshPublicKey": ""/"sshPublicKey": "'"$PUBLIC_KEY_REGEX"'"/' ./reference-architectures/virtual-machines/single-vm/parameters/linux/single-vm.json
+    ```
+
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to set the value of the size parameter of the virtual machines to **Standard_D2s_v3** in the Building Blocks parameter file:
+
+    ```sh
+    sed -i.bak3 's/"Standard_DS1_v2"/"Standard_D2s_v3"/g' ./reference-architectures/virtual-machines/single-vm/parameters/linux/single-vm.json
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to verify that the parameter values were successfully changed in the Building Blocks parameter file:
