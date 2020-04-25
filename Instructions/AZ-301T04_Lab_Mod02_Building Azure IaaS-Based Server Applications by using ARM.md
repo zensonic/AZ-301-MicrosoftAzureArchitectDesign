@@ -46,7 +46,7 @@
 
 1. On the **Windows Server** blade, select the **[smalldisk] Windows Server 2016 Datacenter** software plan, then click the **Create** button.
 
-1. On the **Basics** tab, perform the following tasks:
+1. On the **Basics** tab, perform the following tasks (leave all other settings with their default values):
 
     - Leave the **Subscription** drop-down list entry set to its default value.
 
@@ -62,7 +62,7 @@
 
     - Leave the entry in the **Image** drop-down list set to its default value.
 
-    - Ensure that the size is set to **Standard DS1 v2**
+    - Ensure that the size is set to **Standard D2s v3**
 
     - In the **Username** text box, enter the value **Student**.
 
@@ -74,13 +74,13 @@
 
     - Click **Next: Disks >**
 
-1. On the **Disks** tab, perform the following tasks:
+1. On the **Disks** tab, perform the following tasks (leave all other settings with their default values):
 
-    - Ensure that the **OS disk type** dropdown list entry is set to **Premium SSD**
+    - Ensure that the **OS disk type** dropdown list entry is set to **Standard HDD**
 
     - Click **Next: Networking >**
 
-1. On the **Networking** tab, perform the following tasks:
+1. On the **Networking** tab, perform the following tasks (leave all other settings with their default values):
 
     - In the **Virtual network** section, click **Create new**.
 
@@ -106,7 +106,7 @@
 
     - Click **Next: Management >**
 
-1. On the **Management** tab, perform the following tasks:
+1. On the **Management** tab, perform the following tasks (leave all other settings with their default values):
 
     - Leave the **Boot diagnostics** option set to its default value.
 
@@ -200,7 +200,7 @@
 
 1. Click the **Container** button at the top of the blade.
 
-1. In the **New container** pane that appears, specify the following settings and click **OK**:
+1. In the **New container** pane that appears, specify the following settings and click **Create**:
 
     - In the **Name** text box, enter the value **config**.
 
