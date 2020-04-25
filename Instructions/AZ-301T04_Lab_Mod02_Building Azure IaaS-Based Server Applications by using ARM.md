@@ -339,7 +339,7 @@
 
 1. Right-click the **vmss-template.json** file and select the **Open with Code** option to start the **Visual Studio Code** application.
 
-1. In the **Visual Studio Code** window that appears, review the content of the JSON file.
+1. In the **Visual Studio Code** window that appears, review the content of the JSON file. 
 
 1. At the top of the **Visual Studio Code** window, click the **File** menu and select the **Close Window** option.
 
