@@ -159,9 +159,7 @@
 
 1. On the **AADesignLab1001-RG** blade, in the list of resources, click the newly provisioned function app.
 
-1. On the function app blade, click the **Platform features** tab at the top of the blade.
-
-1. On the **Platform features** tab, click the **Configuration** link in the **General Settings** section.
+1. On the Azure function blade, under **Settings** click on **Configuration** at the left.
 
 1. On the **Application settings** tab, click the **+ New application setting** link, perform the following tasks, and click **OK**:
 
@@ -181,7 +179,7 @@
 
 1. Click the **Save** button at the top of the **Application settings** tab.
 
-1. Navigate back to the function app blade and, on the **Platform features** tab, click the **Container settings** link in the **Code Deployment** section.
+1. Under **Deployment** at the left, click on the **Deployment Center** section.
 
 1. On the **Deployment Center** blade, scroll down to the bottom of the blade and click **External** and then click **Continue**.
 
