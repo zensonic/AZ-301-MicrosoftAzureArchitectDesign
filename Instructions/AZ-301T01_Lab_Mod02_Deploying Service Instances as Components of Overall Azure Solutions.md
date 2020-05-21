@@ -211,6 +211,8 @@
 
 1. Select the **DetermineLanguage** function from the list of functions.
 
+1. On the left, under **Developer**, select the **Code + Test** option
+
 1. In the **run.csx** pane that opens, scroll to the right and click **Test** on the right side of the pane.
 
 1. In the **Test** pane, perform the following tasks:
