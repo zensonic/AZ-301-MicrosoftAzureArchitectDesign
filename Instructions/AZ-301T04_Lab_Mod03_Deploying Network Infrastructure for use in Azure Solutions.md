@@ -52,7 +52,7 @@
 
     - In the **Cloud Shell region** drop-down list, select the Azure region matching or near the location where you intend to deploy resources in this lab
 
-    - In the **Resource group** section, select the **Use existing** option and then, in the drop-down list, select **AADesignLab0901-RG**.
+    - In the **Resource group** section, select the **Create new** option and then, in the text box below, type **AADesignLab0801-RG**.
 
     - In the **Storage account** section, ensure that the **Create new** option is selected and then, in the text box below, type a unique name consisting of a combination of between 3 and 24 characters and digits.
 
