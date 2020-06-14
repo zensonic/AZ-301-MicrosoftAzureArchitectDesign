@@ -447,32 +447,32 @@ o
 
 > **Note**: This is necessary to account for breaking changes affecting running from Cloud Shell.
 
-1. At the **Cloud Shell** command prompt, run the following to create a variable which value designates the name of your Azure subscription:
+1. In the **Cloud Shell** pane, run the following to create a variable which value designates the name of your Azure subscription:
 
-1. At the **Cloud Shell** command prompt, run the following to create a variable which value designates the name of the resource group you will use in this exercise:
+1. In the **Cloud Shell** pane, run the following to create a variable which value designates the name of the resource group you will use in this exercise:
 
     ```sh
     RESOURCE_GROUP='AADesignLab0303-RG'
     ```
 
-1. At the **Cloud Shell** command prompt, run the following to create a variable which value designates the Azure region you will use for the deployment:
+1. In the **Cloud Shell** pane, run the following to create a variable which value designates the Azure region you will use for the deployment:
 
     ```sh
     LOCATION=$(az group list --query "[?name == 'AADesignLab0301-RG'].location" --output tsv)
     ```
 
-1. At the **Cloud Shell** command prompt, run the following to create a resource group that you will use for the deployment:
+1. In the **Cloud Shell** pane, run the following to create a resource group that you will use for the deployment:
 
     ```sh
     az group create --name $RESOURCE_GROUP --location $LOCATION
     ```
 
-1. At the **Cloud Shell** command prompt, run the following to deploy an Azure VM running Linux Ubuntu 18.04 that you will use for deploying resources via Azure Building Blocks:
+1. In the **Cloud Shell** pane, run the following to deploy an Azure VM running Linux Ubuntu 18.04 that you will use for deploying resources via Azure Building Blocks:
 
     ```sh
     UBUNTU_IMAGE='Canonical:UbuntuServer:18.04-LTS:latest'
     VM_NAME='lab03vm1'
-    USER_NAME='demouser'
+    USER_NAME='student'
     az vm create \
     --name $VM_NAME \
     --resource-group $RESOURCE_GROUP \
@@ -485,22 +485,22 @@ o
 
 > **Note**: Wait until the deployment completes.
 
-1. At the **Cloud Shell** command prompt, run the following to retrieve the public IP address of the newly deployed Azure VM:
+1. In the **Cloud Shell** pane, run the following to retrieve the public IP address of the newly deployed Azure VM **lab03vm1**:
 
     ```sh
     IP_ADDRESS=$(az vm show -d --resource-group $RESOURCE_GROUP --name $VM_NAME --query publicIps -o tsv)
     ```
 
-1. At the **Cloud Shell** command prompt, run the following to retrieve the public IP address of the newly deployed Azure VM:
+1. In the **Cloud Shell** pane, run the following to open an SSH session to the newly deployed Azure VM **lab03vm1**:
 
     ```sh
-    ssh demouser@$IP_ADDRESS
+    ssh student@$IP_ADDRESS
     ```
 
-1. At the **Cloud Shell** command prompt, when prompted whether to continue, type **y** and press Enter.
+1. In the **Cloud Shell** pane, when prompted whether to continue, type **y** and press Enter.
 
 
-#### Task 3: Install the Azure Building Blocks npm package in Azure Cloud Shell
+#### Task 3: Install the Azure Building Blocks npm package in the Azure VM running Linux.
 
 1. Within the SSH session to the Azure VM **lab03vm1**, run the following to update locally installed packages and their dependencies:
 
