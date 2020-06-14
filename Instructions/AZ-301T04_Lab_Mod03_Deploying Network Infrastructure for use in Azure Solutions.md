@@ -192,6 +192,83 @@
     cd ./reference-architectures/hybrid-networking/hub-spoke
     ```
 
+1. Within the SSH session to the Azure VM **lab08vm1**, type in the following command and press **Enter** to create a new file:
+
+    ```sh
+    vi hub-spoke.json.patch
+    ```
+
+1. Within the SSH session to the Azure VM **lab08vm1**, in the vi editor interface, type **a** to initiate the **INSERT** mode, press **Enter** to start a new line, and then type the following:
+
+    ```sh
+    --- hub-spoke.json.orig	2020-06-11 16:08:04.175635600 +0200
+    +++ hub-spoke.json	2020-06-11 16:12:07.494153300 +0200
+    @@ -271,27 +271,6 @@
+                             {
+                                 "resourceGroupName": "spoke1-vnet-rg",
+                                 "vmCount": 1,
+    -                            "namePrefix": "s1jb",
+    -                            "computerNamePrefix": "s1jb",
+    -                            "adminUsername": "[replace-with-username]",
+    -                            "adminPassword": "[replace-with-password]",
+    -                            "osType": "windows",
+    -                            "virtualNetwork": {
+    -                                "resourceGroupName": "spoke1-vnet-rg",
+    -                                "name": "spoke1-vnet"
+    -                            },
+    -                            "nics": [
+    -                                {
+    -                                    "isPublic": false,
+    -                                    "subnetName": "mgmt",
+    -                                    "privateIPAllocationMethod": "Static",
+    -                                    "startingIPAddress": "10.1.0.36"
+    -                                }
+    -                            ]
+    -                        },
+    -                        {
+    -                            "resourceGroupName": "spoke1-vnet-rg",
+    -                            "vmCount": 1,
+                                 "namePrefix": "s1jbl",
+                                 "computerNamePrefix": "s1jbl",
+                                 "adminUsername": "[replace-with-username]",
+    @@ -330,27 +309,6 @@
+                                         "startingIPAddress": "10.2.0.36"
+                                     }
+                                 ]
+    -                        },
+    -                        {
+    -                            "resourceGroupName": "spoke2-vnet-rg",
+    -                            "vmCount": 1,
+    -                            "namePrefix": "s2jbl",
+    -                            "computerNamePrefix": "s2jbl",
+    -                            "adminUsername": "[replace-with-username]",
+    -                            "adminPassword": "[replace-with-password]",
+    -                            "osType": "linux",
+    -                            "virtualNetwork": {
+    -                                "resourceGroupName": "spoke2-vnet-rg",
+    -                                "name": "spoke2-vnet"
+    -                            },
+    -                            "nics": [
+    -                                {
+    -                                    "isPublic": false,
+    -                                    "subnetName": "mgmt",
+    -                                    "privateIPAllocationMethod": "Static",
+    -                                    "startingIPAddress": "10.2.0.37"
+    -                                }
+    -                            ]
+                             }
+                         ]
+                     },
+    ```
+
+1. Within the SSH session to the Azure VM **lab08vm1**, in the vi editor interface, press **Esc**, press **:**, type **wq!** and press **Enter** to save your changes and close the file.
+
+1. Within the SSH session to the Azure VM **lab08vm1**, run the following to patch the **hub-spoke.json** (two virtual machines have to be removed due to a quota limitation in the Free Azure Pass subscription - 10 virtual machines in total):
+
+    ```sh
+    patch < hub-spoke.json.patch
+    ```
+
 1. Within the SSH session to the Azure VM **lab08vm1**, run the following to replace the placeholder **[replace-with-username]** with the value **Student** in the **hub-spoke.json** Building Blocks parameter file:
 
     ```sh
@@ -218,7 +295,15 @@
 
 #### Task 5: Implement the hub component of the Hub and Spoke design
 
-1. Within the SSH session to the Azure VM **lab08vm1**, run the following to create a variable which value designates the name of your Azure subscription:
+1. Within the SSH session to the Azure VM **lab08vm1**, run the following to authenticate to your Azure subscription:
+
+    ```sh
+    az login
+    ```
+
+    > **Note**: Follow the instructions provided in the output of the command to authenticate to your Azure subscription.
+
+1. Once you authenticated, return to the Cloud Shell pane displaying the SSH session to the Azure VM **lab08vm1**, and run the following to create a variable which value designates the name of your Azure subscription:
 
     ```sh
     SUBSCRIPTION_ID=$(az account list --query "[0].id" --output tsv | tr -d '"')
